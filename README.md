@@ -9,3 +9,4 @@ De visualisatie bestaat dus uit de volgende onderdelen:
 
 ![](doc/proposal.jpg)
 
+Over energie en milieu worden veel visualizaties gemaakt met behulp van een wereldkaart, maar die belichten vaak maar één aspect tegelijk. De bedoeling van dit project is om op één scherm meerdere aspecten van één onderwerp, groene energie, uit te lichten.
