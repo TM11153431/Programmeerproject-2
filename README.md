@@ -6,3 +6,5 @@ De visualisatie bestaat dus uit de volgende onderdelen:
 * D3 Pie chart. Welke verschillende soorten groene energie worden geproduceerd en hoeveel?
 * D3 Line graph. Is de productie in de afgelopen 15 jaar gestegen of juist gedaald?
 * D3 Barchart. Welke landen presteren het best of het slechtst?
+
+![](doc/proposal.jpg)
