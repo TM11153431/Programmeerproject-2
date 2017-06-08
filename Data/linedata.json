@@ -60,10 +60,6 @@
          {  
             "year":2014,
             "percentage":27.290
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "DZA":[  
@@ -126,10 +122,6 @@
          {  
             "year":2014,
             "percentage":0.050
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "AGO":[  
@@ -192,10 +184,6 @@
          {  
             "year":2014,
             "percentage":51.720
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ARG":[  
@@ -258,10 +246,6 @@
          {  
             "year":2014,
             "percentage":8.750
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ARM":[  
@@ -324,10 +308,6 @@
          {  
             "year":2014,
             "percentage":6.950
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "AUS":[  
@@ -390,10 +370,6 @@
          {  
             "year":2014,
             "percentage":6.530
-         },
-         {  
-            "year":2015,
-            "percentage":6.540
          }
       ],
       "AUT":[  
@@ -456,10 +432,6 @@
          {  
             "year":2014,
             "percentage":30.440
-         },
-         {  
-            "year":2015,
-            "percentage":29.210
          }
       ],
       "AZE":[  
@@ -522,10 +494,6 @@
          {  
             "year":2014,
             "percentage":1.630
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BHR":[  
@@ -588,10 +556,6 @@
          {  
             "year":2014,
             "percentage":0.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BGD":[  
@@ -654,10 +618,6 @@
          {  
             "year":2014,
             "percentage":26.230
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BLR":[  
@@ -720,10 +680,6 @@
          {  
             "year":2014,
             "percentage":5.200
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BEL":[  
@@ -786,10 +742,6 @@
          {  
             "year":2014,
             "percentage":6.360
-         },
-         {  
-            "year":2015,
-            "percentage":6.280
          }
       ],
       "BEN":[  
@@ -852,10 +804,6 @@
          {  
             "year":2014,
             "percentage":53.410
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BOL":[  
@@ -918,10 +866,6 @@
          {  
             "year":2014,
             "percentage":14.800
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BIH":[  
@@ -984,10 +928,6 @@
          {  
             "year":2014,
             "percentage":25.600
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BWA":[  
@@ -1050,10 +990,6 @@
          {  
             "year":2014,
             "percentage":19.980
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BRA":[  
@@ -1116,10 +1052,6 @@
          {  
             "year":2014,
             "percentage":38.580
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BRN":[  
@@ -1182,10 +1114,6 @@
          {  
             "year":2014,
             "percentage":0.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "BGR":[  
@@ -1248,10 +1176,6 @@
          {  
             "year":2014,
             "percentage":9.970
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "KHM":[  
@@ -1314,10 +1238,6 @@
          {  
             "year":2014,
             "percentage":66.880
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "CMR":[  
@@ -1380,10 +1300,6 @@
          {  
             "year":2014,
             "percentage":70.140
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "CAN":[  
@@ -1446,10 +1362,6 @@
          {  
             "year":2014,
             "percentage":17.910
-         },
-         {  
-            "year":2015,
-            "percentage":18.240
          }
       ],
       "CHL":[  
@@ -1512,10 +1424,6 @@
          {  
             "year":2014,
             "percentage":26.450
-         },
-         {  
-            "year":2015,
-            "percentage":26.590
          }
       ],
       "CHN":[  
@@ -1578,10 +1486,6 @@
          {  
             "year":2014,
             "percentage":11.240
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "COL":[  
@@ -1644,10 +1548,6 @@
          {  
             "year":2014,
             "percentage":23.520
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "COG":[  
@@ -1710,10 +1610,6 @@
          {  
             "year":2014,
             "percentage":59.530
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "CRI":[  
@@ -1776,10 +1672,6 @@
          {  
             "year":2014,
             "percentage":50.170
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "CIV":[  
@@ -1842,10 +1734,6 @@
          {  
             "year":2014,
             "percentage":74.050
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "HRV":[  
@@ -1908,10 +1796,6 @@
          {  
             "year":2014,
             "percentage":24.940
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "CUB":[  
@@ -1974,10 +1858,6 @@
          {  
             "year":2014,
             "percentage":14.240
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "CYP":[  
@@ -2040,10 +1920,6 @@
          {  
             "year":2014,
             "percentage":6.710
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "CZE":[  
@@ -2106,10 +1982,6 @@
          {  
             "year":2014,
             "percentage":8.820
-         },
-         {  
-            "year":2015,
-            "percentage":8.770
          }
       ],
       "KOR":[  
@@ -2172,10 +2044,6 @@
          {  
             "year":2014,
             "percentage":18.590
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "COD":[  
@@ -2238,10 +2106,6 @@
          {  
             "year":2014,
             "percentage":94.320
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "DNK":[  
@@ -2304,10 +2168,6 @@
          {  
             "year":2014,
             "percentage":27.350
-         },
-         {  
-            "year":2015,
-            "percentage":28.370
          }
       ],
       "DOM":[  
@@ -2370,10 +2230,6 @@
          {  
             "year":2014,
             "percentage":13.460
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ECU":[  
@@ -2436,10 +2292,6 @@
          {  
             "year":2014,
             "percentage":12.640
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "EGY":[  
@@ -2502,10 +2354,6 @@
          {  
             "year":2014,
             "percentage":4.070
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SLV":[  
@@ -2568,10 +2416,6 @@
          {  
             "year":2014,
             "percentage":50.760
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ERI":[  
@@ -2634,10 +2478,6 @@
          {  
             "year":2014,
             "percentage":77.730
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "EST":[  
@@ -2700,10 +2540,6 @@
          {  
             "year":2014,
             "percentage":14.220
-         },
-         {  
-            "year":2015,
-            "percentage":17.360
          }
       ],
       "ETH":[  
@@ -2766,10 +2602,6 @@
          {  
             "year":2014,
             "percentage":94.080
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "FIN":[  
@@ -2832,10 +2664,6 @@
          {  
             "year":2014,
             "percentage":29.920
-         },
-         {  
-            "year":2015,
-            "percentage":32.260
          }
       ],
       "MKD":[  
@@ -2898,10 +2726,6 @@
          {  
             "year":2014,
             "percentage":11.010
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "FRA":[  
@@ -2964,10 +2788,6 @@
          {  
             "year":2014,
             "percentage":8.780
-         },
-         {  
-            "year":2015,
-            "percentage":8.760
          }
       ],
       "GAB":[  
@@ -3030,10 +2850,6 @@
          {  
             "year":2014,
             "percentage":75.140
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "GEO":[  
@@ -3096,10 +2912,6 @@
          {  
             "year":2014,
             "percentage":27.300
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "DEU":[  
@@ -3162,10 +2974,6 @@
          {  
             "year":2014,
             "percentage":11.570
-         },
-         {  
-            "year":2015,
-            "percentage":12.490
          }
       ],
       "GHA":[  
@@ -3228,10 +3036,6 @@
          {  
             "year":2014,
             "percentage":48.140
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "GRC":[  
@@ -3294,10 +3098,6 @@
          {  
             "year":2014,
             "percentage":10.570
-         },
-         {  
-            "year":2015,
-            "percentage":11.290
          }
       ],
       "GTM":[  
@@ -3360,10 +3160,6 @@
          {  
             "year":2014,
             "percentage":62.950
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "HTI":[  
@@ -3426,10 +3222,6 @@
          {  
             "year":2014,
             "percentage":77.980
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "HND":[  
@@ -3492,10 +3284,6 @@
          {  
             "year":2014,
             "percentage":47.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "HKG":[  
@@ -3558,10 +3346,6 @@
          {  
             "year":2014,
             "percentage":1.360
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "HUN":[  
@@ -3624,10 +3408,6 @@
          {  
             "year":2014,
             "percentage":8.450
-         },
-         {  
-            "year":2015,
-            "percentage":8.040
          }
       ],
       "ISL":[  
@@ -3690,10 +3470,6 @@
          {  
             "year":2014,
             "percentage":89.070
-         },
-         {  
-            "year":2015,
-            "percentage":88.480
          }
       ],
       "IND":[  
@@ -3756,10 +3532,6 @@
          {  
             "year":2014,
             "percentage":25.300
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "IDN":[  
@@ -3822,10 +3594,6 @@
          {  
             "year":2014,
             "percentage":34.430
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "IRN":[  
@@ -3888,10 +3656,6 @@
          {  
             "year":2014,
             "percentage":0.730
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "IRQ":[  
@@ -3954,10 +3718,6 @@
          {  
             "year":2014,
             "percentage":0.600
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "IRL":[  
@@ -4020,10 +3780,6 @@
          {  
             "year":2014,
             "percentage":7.530
-         },
-         {  
-            "year":2015,
-            "percentage":8.110
          }
       ],
       "ISR":[  
@@ -4086,10 +3842,6 @@
          {  
             "year":2014,
             "percentage":5.280
-         },
-         {  
-            "year":2015,
-            "percentage":5.320
          }
       ],
       "ITA":[  
@@ -4152,10 +3904,6 @@
          {  
             "year":2014,
             "percentage":18.060
-         },
-         {  
-            "year":2015,
-            "percentage":17.470
          }
       ],
       "JAM":[  
@@ -4218,10 +3966,6 @@
          {  
             "year":2014,
             "percentage":19.030
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "JPN":[  
@@ -4284,10 +4028,6 @@
          {  
             "year":2014,
             "percentage":4.840
-         },
-         {  
-            "year":2015,
-            "percentage":5.280
          }
       ],
       "JOR":[  
@@ -4350,10 +4090,6 @@
          {  
             "year":2014,
             "percentage":2.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "KAZ":[  
@@ -4416,10 +4152,6 @@
          {  
             "year":2014,
             "percentage":0.960
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "KEN":[  
@@ -4482,10 +4214,6 @@
          {  
             "year":2014,
             "percentage":82.830
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "PRK":[  
@@ -4548,10 +4276,6 @@
          {  
             "year":2014,
             "percentage":1.460
-         },
-         {  
-            "year":2015,
-            "percentage":1.470
          }
       ],
       "KWT":[  
@@ -4614,10 +4338,6 @@
          {  
             "year":2014,
             "percentage":0.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "KGZ":[  
@@ -4680,10 +4400,6 @@
          {  
             "year":2014,
             "percentage":30.210
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "LVA":[  
@@ -4746,10 +4462,6 @@
          {  
             "year":2014,
             "percentage":37.170
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "LBN":[  
@@ -4812,10 +4524,6 @@
          {  
             "year":2014,
             "percentage":2.220
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "LBY":[  
@@ -4878,10 +4586,6 @@
          {  
             "year":2014,
             "percentage":0.850
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "LTU":[  
@@ -4944,10 +4648,6 @@
          {  
             "year":2014,
             "percentage":18.250
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "LUX":[  
@@ -5010,10 +4710,6 @@
          {  
             "year":2014,
             "percentage":4.980
-         },
-         {  
-            "year":2015,
-            "percentage":5.220
          }
       ],
       "MYS":[  
@@ -5076,10 +4772,6 @@
          {  
             "year":2014,
             "percentage":3.370
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "MLT":[  
@@ -5142,10 +4834,6 @@
          {  
             "year":2014,
             "percentage":2.210
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "MEX":[  
@@ -5208,10 +4896,6 @@
          {  
             "year":2014,
             "percentage":8.470
-         },
-         {  
-            "year":2015,
-            "percentage":8.250
          }
       ],
       "MDA":[  
@@ -5274,10 +4958,6 @@
          {  
             "year":2014,
             "percentage":9.410
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "MNG":[  
@@ -5340,33 +5020,9 @@
          {  
             "year":2014,
             "percentage":3.770
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "MNE":[  
-         {  
-            "year":2000,
-            "percentage":null
-         },
-         {  
-            "year":2001,
-            "percentage":null
-         },
-         {  
-            "year":2002,
-            "percentage":null
-         },
-         {  
-            "year":2003,
-            "percentage":null
-         },
-         {  
-            "year":2004,
-            "percentage":null
-         },
          {  
             "year":2005,
             "percentage":33.800
@@ -5406,10 +5062,6 @@
          {  
             "year":2014,
             "percentage":33.070
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "MAR":[  
@@ -5472,10 +5124,6 @@
          {  
             "year":2014,
             "percentage":8.810
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "MOZ":[  
@@ -5538,10 +5186,6 @@
          {  
             "year":2014,
             "percentage":89.280
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "MMR":[  
@@ -5604,10 +5248,6 @@
          {  
             "year":2014,
             "percentage":60.670
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "NAM":[  
@@ -5670,10 +5310,6 @@
          {  
             "year":2014,
             "percentage":19.940
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "NPL":[  
@@ -5736,10 +5372,6 @@
          {  
             "year":2014,
             "percentage":83.230
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "NLD":[  
@@ -5802,10 +5434,6 @@
          {  
             "year":2014,
             "percentage":4.720
-         },
-         {  
-            "year":2015,
-            "percentage":5.050
          }
       ],
       "NZL":[  
@@ -5868,10 +5496,6 @@
          {  
             "year":2014,
             "percentage":39.990
-         },
-         {  
-            "year":2015,
-            "percentage":40.460
          }
       ],
       "NIC":[  
@@ -5934,10 +5558,6 @@
          {  
             "year":2014,
             "percentage":59.140
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "NER":[  
@@ -6000,10 +5620,6 @@
          {  
             "year":2014,
             "percentage":73.770
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "NGA":[  
@@ -6066,10 +5682,6 @@
          {  
             "year":2014,
             "percentage":80.960
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "NOR":[  
@@ -6132,10 +5744,6 @@
          {  
             "year":2014,
             "percentage":45.560
-         },
-         {  
-            "year":2015,
-            "percentage":44.610
          }
       ],
       "OMN":[  
@@ -6198,10 +5806,6 @@
          {  
             "year":2014,
             "percentage":0.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "PAK":[  
@@ -6264,10 +5868,6 @@
          {  
             "year":2014,
             "percentage":38.780
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "PAN":[  
@@ -6330,10 +5930,6 @@
          {  
             "year":2014,
             "percentage":19.100
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "PRY":[  
@@ -6396,10 +5992,6 @@
          {  
             "year":2014,
             "percentage":135.190
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "PER":[  
@@ -6462,10 +6054,6 @@
          {  
             "year":2014,
             "percentage":20.450
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "PHL":[  
@@ -6528,10 +6116,6 @@
          {  
             "year":2014,
             "percentage":37.990
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "POL":[  
@@ -6594,10 +6178,6 @@
          {  
             "year":2014,
             "percentage":9.140
-         },
-         {  
-            "year":2015,
-            "percentage":9.590
          }
       ],
       "PRT":[  
@@ -6660,10 +6240,6 @@
          {  
             "year":2014,
             "percentage":26.160
-         },
-         {  
-            "year":2015,
-            "percentage":21.530
          }
       ],
       "QAT":[  
@@ -6726,10 +6302,6 @@
          {  
             "year":2014,
             "percentage":0.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ROU":[  
@@ -6792,10 +6364,6 @@
          {  
             "year":2014,
             "percentage":19.330
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "RUS":[  
@@ -6858,10 +6426,6 @@
          {  
             "year":2014,
             "percentage":2.530
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SAU":[  
@@ -6924,10 +6488,6 @@
          {  
             "year":2014,
             "percentage":0.000
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SEN":[  
@@ -6990,10 +6550,6 @@
          {  
             "year":2014,
             "percentage":45.890
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SRB":[  
@@ -7056,10 +6612,6 @@
          {  
             "year":2014,
             "percentage":15.110
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SGP":[  
@@ -7122,10 +6674,6 @@
          {  
             "year":2014,
             "percentage":1.320
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SVK":[  
@@ -7188,10 +6736,6 @@
          {  
             "year":2014,
             "percentage":8.900
-         },
-         {  
-            "year":2015,
-            "percentage":8.540
          }
       ],
       "SVN":[  
@@ -7254,10 +6798,6 @@
          {  
             "year":2014,
             "percentage":18.350
-         },
-         {  
-            "year":2015,
-            "percentage":16.070
          }
       ],
       "ZAF":[  
@@ -7320,10 +6860,6 @@
          {  
             "year":2014,
             "percentage":10.800
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ESP":[  
@@ -7386,10 +6922,6 @@
          {  
             "year":2014,
             "percentage":15.510
-         },
-         {  
-            "year":2015,
-            "percentage":14.350
          }
       ],
       "LKA":[  
@@ -7452,10 +6984,6 @@
          {  
             "year":2014,
             "percentage":49.730
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SDN":[  
@@ -7518,10 +7046,6 @@
          {  
             "year":2014,
             "percentage":68.240
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "SWE":[  
@@ -7584,10 +7108,6 @@
          {  
             "year":2014,
             "percentage":35.850
-         },
-         {  
-            "year":2015,
-            "percentage":45.890
          }
       ],
       "CHE":[  
@@ -7650,10 +7170,6 @@
          {  
             "year":2014,
             "percentage":21.100
-         },
-         {  
-            "year":2015,
-            "percentage":22.350
          }
       ],
       "SYR":[  
@@ -7716,10 +7232,6 @@
          {  
             "year":2014,
             "percentage":2.450
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "TJK":[  
@@ -7782,10 +7294,6 @@
          {  
             "year":2014,
             "percentage":49.060
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "TZA":[  
@@ -7848,10 +7356,6 @@
          {  
             "year":2014,
             "percentage":85.600
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "THA":[  
@@ -7914,10 +7418,6 @@
          {  
             "year":2014,
             "percentage":19.570
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "TGO":[  
@@ -7980,10 +7480,6 @@
          {  
             "year":2014,
             "percentage":80.030
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "TTO":[  
@@ -8046,10 +7542,6 @@
          {  
             "year":2014,
             "percentage":0.070
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "TUN":[  
@@ -8112,10 +7604,6 @@
          {  
             "year":2014,
             "percentage":11.120
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "TUR":[  
@@ -8178,10 +7666,6 @@
          {  
             "year":2014,
             "percentage":9.940
-         },
-         {  
-            "year":2015,
-            "percentage":11.970
          }
       ],
       "TKM":[  
@@ -8244,10 +7728,6 @@
          {  
             "year":2014,
             "percentage":0.030
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "UKR":[  
@@ -8310,10 +7790,6 @@
          {  
             "year":2014,
             "percentage":2.650
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ARE":[  
@@ -8376,10 +7852,6 @@
          {  
             "year":2014,
             "percentage":0.180
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "GBR":[  
@@ -8442,10 +7914,6 @@
          {  
             "year":2014,
             "percentage":6.750
-         },
-         {  
-            "year":2015,
-            "percentage":7.660
          }
       ],
       "USA":[  
@@ -8508,10 +7976,6 @@
          {  
             "year":2014,
             "percentage":6.870
-         },
-         {  
-            "year":2015,
-            "percentage":6.860
          }
       ],
       "URY":[  
@@ -8574,10 +8038,6 @@
          {  
             "year":2014,
             "percentage":55.470
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "UZB":[  
@@ -8640,10 +8100,6 @@
          {  
             "year":2014,
             "percentage":2.340
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "VEN":[  
@@ -8706,10 +8162,6 @@
          {  
             "year":2014,
             "percentage":12.200
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "VNM":[  
@@ -8772,10 +8224,6 @@
          {  
             "year":2014,
             "percentage":30.590
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "YEM":[  
@@ -8838,10 +8286,6 @@
          {  
             "year":2014,
             "percentage":1.530
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ZMB":[  
@@ -8904,10 +8348,6 @@
          {  
             "year":2014,
             "percentage":89.800
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ],
       "ZWE":[  
@@ -8970,10 +8410,6 @@
          {  
             "year":2014,
             "percentage":70.480
-         },
-         {  
-            "year":2015,
-            "percentage":null
          }
       ]
    }

@@ -26,7 +26,7 @@ h1 {
   width: 700px;
   height: 500px;
   background-color: white;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   float: left;
 }
 
@@ -34,12 +34,12 @@ h1 {
   float: right;
   width: 450px;
   height: 500px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 #topRowInfo {
   height: 200px;
-  border: 1px solid black
+  /*border: 1px solid black*/
 }
 
 #countryContainer {
@@ -52,14 +52,16 @@ h1 {
 }
 
 #lineContainer {
-	padding: 30px
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 300px
 }
 
 #mainInfo {
 	padding: 30px
 }
 
-path { 
+.line { 
     stroke: steelblue;
     stroke-width: 2;
     fill: none;
@@ -69,8 +71,11 @@ path {
 .axis line {
     fill: none;
     stroke: grey;
-    stroke-width: 1;
+    stroke-width: 2;
     shape-rendering: crispEdges;
+}
+.axis text {
+	font-size: 10px;
 }
 
 #comment {
