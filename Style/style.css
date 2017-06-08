@@ -32,13 +32,27 @@ h1 {
 
 #infoContainer {
   float: right;
-  width: 400px;
+  width: 450px;
   height: 500px;
   border: 1px solid black;
 }
 
+#topRowInfo {
+  height: 200px;
+  border: 1px solid black
+}
+
 #countryContainer {
-  padding: 30px;
+  width: 50%;
+  padding-left: 25px;
+  float: left
+}
+
+#pieContainer {
+}
+
+#lineContainer {
+	padding: 30px
 }
 
 #comment {
