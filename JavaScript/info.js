@@ -17,10 +17,10 @@ var defaultData = [{
 // que json files
 d3.queue(2)
     .defer(function(url, callback) {
-		d3.json(url, function(error, RDI) {
+		d3.json(url, function(error, countryData) {
 			if (error) throw error;
 			// draw map function
-			map(RDI);
+			map(countryData);
 		})
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")
 	.defer(function(url, callback) {
@@ -40,10 +40,10 @@ function ready(error) {
 
 
 // create data map
-function map(RDI) {
+function map(countryData) {
 	
 	// retrieve json data
-	dataset = RDI[0];
+	dataset = countryData[0];
 	
 	// get min and max values
 	var indexValues = Object.keys(dataset).map(function (key) { return dataset[key].percentage; } );
