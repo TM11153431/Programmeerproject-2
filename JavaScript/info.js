@@ -1,5 +1,5 @@
 /*
-linkedviews.js
+info.js
 Programmeerproject
 Berend Nannes
 */
@@ -23,12 +23,20 @@ d3.queue(2)
 			map(RDI);
 		})
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")
+	.defer(function(url, callback) {
+		d3.json(url, function(error, data) {
+			if (error) throw error;
+			// send to sunBurst
+			clickCallback = function(code, country, index) {
+				showInfo(data[0][code], country, index);
+			}
+		}) 
+	}, "https://raw.githubusercontent.com/BerendNannes/DataProcessing/master/Homework/Week%206/Data/religion.json")
     .await(ready);
 	
 function ready(error) {
     if (error) throw error;
 }
-
 
 
 // create data map
@@ -45,7 +53,7 @@ function map(RDI) {
 	// create color scale
 	var paletteScale = d3.scale.linear()
 		.domain([minIndex, maxIndex])
-		.range(["#efedf5","#4d4675"]);
+		.range(["#92ff8c","#097703"]);
 	
 	// set fillColor to data points
 	for (var i in dataset) {
@@ -66,7 +74,7 @@ function map(RDI) {
 			popupTemplate: function(geo, data) {
 				
 				// check if there's available data
-				if (data) {output = "RDI: " + data.percentage;}
+				if (data) {output = data.percentage + "%";}
 				else {output = "No data available";}
 				
 				// return hover info
@@ -90,14 +98,37 @@ function map(RDI) {
 	});
 };
 
+
+// show info when country is clicked
+function showInfo(data, country, index) {
+	
+	// remove old data
+	d3.select("#countryContainer").html("");
+	
+	// add country info
+	var countryText = d3.select("#countryContainer")
+	   .append("span")
+		.style("font-size","25px")
+		.style("font-weight","bold")
+		.html(country+"<br/>")
+	   .append("span")
+		.style("font-size","20px")
+		.style("font-weight","normal")
+		.style("align","right")
+		.html(index + "%");
+		
+};
+
+
 // Stash the old values for transition.
 function stash(d) {
 	d.total = d.value;
 	d.x0 = d.x;
 	d.dx0 = d.dx;
-}
+};
 
 // format big numbers
 function formatNumber(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+};
+
