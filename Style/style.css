@@ -69,3 +69,8 @@ h1 {
 .top {
   padding-left: 120px;
 }
+
+.red .active a,
+.red .active a:hover {
+    background-color: red;
+}
