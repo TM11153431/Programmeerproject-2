@@ -102,19 +102,20 @@ function map(countryData) {
 		data: dataset
 	});
 	
+	// add container for color scale
 	var svg = d3.select("#mapContainer")
 		.append("svg")
 		.attr("width", "300px")
 		.attr("height", "40px")
-		
+	
+	// create color gradient
 	var grad = svg.append('defs')
 		.append('linearGradient')
 		.attr('id', 'grad')
 		.attr('x1', '0%')
 		.attr('x2', '100%')
 		.attr('y1', '0%')
-		.attr('y2', '0%');
-		
+		.attr('y2', '0%');		
 	grad.selectAll('stop')
 		.data(colors)
 		.enter()
@@ -124,21 +125,22 @@ function map(countryData) {
 		return 100 * (i / (colors.length - 1)) + '%';
 		})
 
-	var bar = svg.append("g");
 	
+	// draw color bar
+	var bar = svg.append("g");
 	bar.append("rect")
 		.attr('x', 10)
 		.attr('y', 10)
 		.attr('width', 300)
 		.attr('height', 40)
-		.style('fill', 'url(#grad)');
-		
+		.style('fill', 'url(#grad)');	
+
+	// add text to bar
 	bar.append("text").text("0%")
 		.attr("transform", "translate(20,30)")
 		.attr("font-size","14px")
 		.attr("font-weight","bold")
-		.attr("fill", colors[1]);
-		
+		.attr("fill", colors[1]);		
 	bar.append("text").text("100%")
 		.attr("transform", "translate(260,30)")
 		.attr("font-size","14px")
@@ -148,7 +150,7 @@ function map(countryData) {
 	
 };
 
-// show info when country is clicked
+// draw pie chart
 function drawPie(data, country, index, code) {
 	
 	// remove old data
@@ -258,7 +260,6 @@ function drawLine(data,code) {
 	var	margin = {top: 10, right: 30, bottom: 30, left: 30},
 		width = 400 - margin.left - margin.right,
 		height = 250 - margin.top - margin.bottom;
-
 	 
 	// Set the ranges
 	var	x = d3.scale.linear().range([0, width]);
