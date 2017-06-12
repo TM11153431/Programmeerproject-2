@@ -16,10 +16,10 @@
          "percentage":6.950
       },
       "AUS":{  
-         "percentage":6.540
+         "percentage":6.530
       },
       "AUT":{  
-         "percentage":29.210
+         "percentage":30.440
       },
       "AZE":{  
          "percentage":1.630
@@ -34,7 +34,7 @@
          "percentage":5.200
       },
       "BEL":{  
-         "percentage":6.280
+         "percentage":6.360
       },
       "BEN":{  
          "percentage":53.410
@@ -64,10 +64,10 @@
          "percentage":70.140
       },
       "CAN":{  
-         "percentage":18.240
+         "percentage":17.910
       },
       "CHL":{  
-         "percentage":26.590
+         "percentage":26.450
       },
       "CHN":{  
          "percentage":11.240
@@ -94,7 +94,7 @@
          "percentage":6.710
       },
       "CZE":{  
-         "percentage":8.770
+         "percentage":8.820
       },
       "KOR":{  
          "percentage":18.590
@@ -103,7 +103,7 @@
          "percentage":94.320
       },
       "DNK":{  
-         "percentage":28.370
+         "percentage":27.350
       },
       "DOM":{  
          "percentage":13.460
@@ -121,19 +121,19 @@
          "percentage":77.730
       },
       "EST":{  
-         "percentage":17.360
+         "percentage":14.220
       },
       "ETH":{  
          "percentage":94.080
       },
       "FIN":{  
-         "percentage":32.260
+         "percentage":29.920
       },
       "MKD":{  
          "percentage":11.010
       },
       "FRA":{  
-         "percentage":8.760
+         "percentage":8.780
       },
       "GAB":{  
          "percentage":75.140
@@ -142,13 +142,13 @@
          "percentage":27.300
       },
       "DEU":{  
-         "percentage":12.490
+         "percentage":11.570
       },
       "GHA":{  
          "percentage":48.140
       },
       "GRC":{  
-         "percentage":11.290
+         "percentage":10.570
       },
       "GTM":{  
          "percentage":62.950
@@ -163,10 +163,10 @@
          "percentage":1.360
       },
       "HUN":{  
-         "percentage":8.040
+         "percentage":8.450
       },
       "ISL":{  
-         "percentage":88.480
+         "percentage":89.070
       },
       "IND":{  
          "percentage":25.300
@@ -181,19 +181,19 @@
          "percentage":0.600
       },
       "IRL":{  
-         "percentage":8.110
+         "percentage":7.530
       },
       "ISR":{  
-         "percentage":5.320
+         "percentage":5.280
       },
       "ITA":{  
-         "percentage":17.470
+         "percentage":18.060
       },
       "JAM":{  
          "percentage":19.030
       },
       "JPN":{  
-         "percentage":5.280
+         "percentage":4.840
       },
       "JOR":{  
          "percentage":2.000
@@ -205,7 +205,7 @@
          "percentage":82.830
       },
       "PRK":{  
-         "percentage":1.470
+         "percentage":1.460
       },
       "KWT":{  
          "percentage":0.000
@@ -226,7 +226,7 @@
          "percentage":18.250
       },
       "LUX":{  
-         "percentage":5.220
+         "percentage":4.980
       },
       "MYS":{  
          "percentage":3.370
@@ -235,7 +235,7 @@
          "percentage":2.210
       },
       "MEX":{  
-         "percentage":8.250
+         "percentage":8.470
       },
       "MDA":{  
          "percentage":9.410
@@ -262,10 +262,10 @@
          "percentage":83.230
       },
       "NLD":{  
-         "percentage":5.050
+         "percentage":4.720
       },
       "NZL":{  
-         "percentage":40.460
+         "percentage":39.990
       },
       "NIC":{  
          "percentage":59.140
@@ -277,7 +277,7 @@
          "percentage":80.960
       },
       "NOR":{  
-         "percentage":44.610
+         "percentage":45.560
       },
       "OMN":{  
          "percentage":0.000
@@ -289,7 +289,7 @@
          "percentage":19.100
       },
       "PRY":{  
-         "percentage":100.000
+         "percentage":100
       },
       "PER":{  
          "percentage":20.450
@@ -298,10 +298,10 @@
          "percentage":37.990
       },
       "POL":{  
-         "percentage":9.590
+         "percentage":9.140
       },
       "PRT":{  
-         "percentage":21.530
+         "percentage":26.160
       },
       "QAT":{  
          "percentage":0.000
@@ -325,16 +325,16 @@
          "percentage":1.320
       },
       "SVK":{  
-         "percentage":8.540
+         "percentage":8.900
       },
       "SVN":{  
-         "percentage":16.070
+         "percentage":18.350
       },
       "ZAF":{  
          "percentage":10.800
       },
       "ESP":{  
-         "percentage":14.350
+         "percentage":15.510
       },
       "LKA":{  
          "percentage":49.730
@@ -343,10 +343,10 @@
          "percentage":68.240
       },
       "SWE":{  
-         "percentage":45.890
+         "percentage":35.850
       },
       "CHE":{  
-         "percentage":22.350
+         "percentage":21.100
       },
       "SYR":{  
          "percentage":2.450
@@ -370,7 +370,7 @@
          "percentage":11.120
       },
       "TUR":{  
-         "percentage":11.970
+         "percentage":9.940
       },
       "TKM":{  
          "percentage":0.030
@@ -382,10 +382,10 @@
          "percentage":0.180
       },
       "GBR":{  
-         "percentage":7.660
+         "percentage":6.750
       },
       "USA":{  
-         "percentage":6.860
+         "percentage":6.870
       },
       "URY":{  
          "percentage":55.470

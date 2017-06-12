@@ -2,16 +2,7 @@
 info.js
 Programmeerproject
 Berend Nannes
-*/
-
-// set default data
-var defaultData = [{
-	name: "flare",
-	children: [{
-		name: "Nonreligious",
-		size: 1
-	}]
-}]			
+*/		
 
 
 // que json files
@@ -107,6 +98,7 @@ function map(countryData) {
 	});
 };
 
+#window.onload = clickCallback("NLD", "Netherlands", 5);
 
 // show info when country is clicked
 function drawPie(data, country, index, code) {
