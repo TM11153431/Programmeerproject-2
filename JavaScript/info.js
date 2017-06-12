@@ -185,8 +185,6 @@ function drawPie(data, country, index, code) {
 // draw line graph
 function drawLine(data,code) {
 	
-	console.log(data)
-	
 	// remove old graph
 	d3.select("#lineGraph").remove();
 	
