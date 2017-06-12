@@ -16,29 +16,33 @@ h1 {
 }
 
 #dataVis {
-  width: 1150px;
+  width: 1200px;
   border: none;
-  height: 510px;
+  height: 610px;
 }
 
 #mapContainer {
   position: relative; 
   width: 700px;
-  height: 500px;
+  height: 600px;
   background-color: white;
   /*border: 1px solid black;*/
   float: left;
 }
 
+#mapContainer {
+  bottom: 0px;
+}
+
 #infoContainer {
   float: right;
-  width: 450px;
-  height: 500px;
+  width: 500px;
+  height: 600px;
   /*border: 1px solid black;*/
 }
 
 #topRowInfo {
-  height: 200px;
+  height: 300px;
   /*border: 1px solid black*/
 }
 
@@ -49,7 +53,16 @@ h1 {
 }
 
 #pieContainer {
+  padding-left: 100px;
 }
+
+.arc path {
+  stroke: none;
+}
+
+.legend rect {
+  fill:white;
+  stroke:none;}
 
 #lineContainer {
   padding-left: 20px;
@@ -67,15 +80,16 @@ h1 {
     fill: none;
 }
 
-.axis path,
-.axis line {
+
+	
+.axis path, line {
     fill: none;
     stroke: grey;
-    stroke-width: 2;
+    stroke-width: 1;
     shape-rendering: crispEdges;
 }
 .axis text {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 #comment {
@@ -91,6 +105,12 @@ h1 {
 
 .hoverinfo {
   font: 12px sans-serif;
+}
+
+.tooltip {
+  position: relative;
+  font-family: verdana;
+  top: 450px;
 }
 
 
