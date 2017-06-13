@@ -79,6 +79,16 @@ p {
   width: 1200px;
 }
 
+#sourcesTable {
+  width: 1200px;
+}
+
+.sourceCol {
+  width: 240px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
 .line { 
     stroke: steelblue;
     stroke-width: 2;
