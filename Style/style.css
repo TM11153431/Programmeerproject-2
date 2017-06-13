@@ -15,6 +15,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  font-size: 15px;
+}
+
 #dataVis {
   width: 1200px;
   border: none;
@@ -71,7 +75,8 @@ h1 {
 }
 
 #mainInfo {
-	padding: 30px
+  padding: 30px;
+  width: 1200px;
 }
 
 .line { 

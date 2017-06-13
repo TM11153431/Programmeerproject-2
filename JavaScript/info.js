@@ -12,7 +12,8 @@ d3.queue(3)
 			if (error) throw error;
 			// draw map function
 			map(countryData);
-			//clickCallback("NLD", "Netherlands", 5);
+			// show default info
+			setTimeout(function(){ clickCallback("NLD", "Netherlands", "4.72"); }, 100);
 		})
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")
 	.defer(function(url, callback) {
@@ -35,7 +36,7 @@ d3.queue(3)
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/linedata.json")
     .await(ready);
 	
-function ready(error) {
+function ready(error, data) {
     if (error) throw error;
 }
 
@@ -211,12 +212,10 @@ function drawPie(data, country, index, code) {
 			div.transition()		
 				.duration(200)		
 				.style("opacity", .999);	
-			div.html("<div style='font-size: 20px; color:"+ color(d.data.source) +";'><b>" + d.data.source + "</b></div><div style='font-size:15px'> takes care of <b><u>"
+			div.html("<div style='font-size: 20px; color:"+ color(d.data.source) +";'><b>" + d.data.source + "</b></div><div style='font-size:15px'> provides <b><u>"
 				+ (d.data.percentage*100).toFixed(2)+ "% </b></u> of the total renewable energy production." + "</div><br/>")
 				.style("width", "170px")
 				.style("height", "125px");
-				//.style("left", 700 + "px")		
-				//.style("top", 10 + "px");
         })
         .on("mouseout", function(d) {
             d3.select(this).select("path").transition()
@@ -224,29 +223,24 @@ function drawPie(data, country, index, code) {
                .attr("d", arc);
         });
 
-		
+	
+	// set legend categories
 	g.append("path")
 		.attr("d", arc)
 		.attr("data-legend", function(d) { return d.data.source; })
 		.attr("data-legend-pos", function(d, i) { return i; })
 		.style("fill", function(d) { return color(d.data.source); });
 
-		
-	  var padding = 20,
-		legx = radius + padding,
-		legend = svg.append("g")
-		.attr("class", "legend")
-		.attr("transform", "translate(-30, 120)")
-		.style("font-size", "12px")
-		.call(d3.legend);
+	// draw legend
+	var padding = 20,
+	legx = radius + padding,
+	legend = svg.append("g")
+	.attr("class", "legend")
+	.attr("transform", "translate(-30, 120)")
+	.style("font-size", "12px")
+	.call(d3.legend);
 	
-	/**
-	g.append("text")
-		.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-		.attr("dy", ".35em")
-		.text(function(d) { return d.data.source; });
-	**/
-	
+	// go to line graph
 	lineCallback(code)
 };
 
@@ -264,6 +258,7 @@ function drawLine(data,code) {
 	// Set the ranges
 	var	x = d3.scale.linear().range([0, width]);
 	var	y = d3.scale.linear().range([height, 0]);
+
 	 
 	// Define the axes
 	var	xAxis = d3.svg.axis().scale(x)
@@ -289,7 +284,7 @@ function drawLine(data,code) {
 	
 	// Scale the range of the data
 	x.domain(d3.extent(data, function(d) {return d.year; }));
-	y.domain([0, d3.max(data, function(d) { return d.percentage; })]);
+	y.domain([0.9*d3.min(data, function(d) { return d.percentage; }), d3.max(data, function(d) { return d.percentage; })]);
 	
 	// Add the valueline path.
 	svg.append("path")	
@@ -310,15 +305,4 @@ function drawLine(data,code) {
 	
 };
 
-// Stash the old values for transition.
-function stash(d) {
-	d.total = d.value;
-	d.x0 = d.x;
-	d.dx0 = d.dx;
-};
-
-// format big numbers
-function formatNumber(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
 
