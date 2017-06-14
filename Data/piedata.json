@@ -3387,6 +3387,28 @@
             "source":"Geothermal",
             "percentage":0
          }
+      ],
+	  "WLD":[  
+         {  
+            "source":"Hydropower",
+            "percentage":0.613
+         },
+         {  
+            "source":"Wind power",
+            "percentage":0.220
+         },
+         {  
+            "source":"Biomass",
+            "percentage":0.058
+         },
+         {  
+            "source":"Solar power",
+            "percentage":0.102
+         },
+         {  
+            "source":"Geothermal",
+            "percentage":0.007
+         }
       ]
    }
 ]

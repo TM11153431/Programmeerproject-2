@@ -8411,6 +8411,68 @@
             "year":2014,
             "percentage":70.480
          }
+      ],
+	  "WLD":[  
+         {  
+            "year":2000,
+            "percentage":12.880
+         },
+         {  
+            "year":2001,
+            "percentage":12.740
+         },
+         {  
+            "year":2002,
+            "percentage":12.690
+         },
+         {  
+            "year":2003,
+            "percentage":12.560
+         },
+         {  
+            "year":2004,
+            "percentage":12.410
+         },
+         {  
+            "year":2005,
+            "percentage":12.430
+         },
+         {  
+            "year":2006,
+            "percentage":12.410
+         },
+         {  
+            "year":2007,
+            "percentage":12.440
+         },
+         {  
+            "year":2008,
+            "percentage":12.660
+         },
+         {  
+            "year":2009,
+            "percentage":13.030
+         },
+         {  
+            "year":2010,
+            "percentage":12.900
+         },
+         {  
+            "year":2011,
+            "percentage":12.990
+         },
+         {  
+            "year":2012,
+            "percentage":13.310
+         },
+         {  
+            "year":2013,
+            "percentage":13.630
+         },
+         {  
+            "year":2014,
+            "percentage":13.830
+         }
       ]
    }
 ]
