@@ -24,12 +24,26 @@ Data Processing
 <div class="jumbotron text-center">
 	<div class="top"><h1>Renewable Energy in the World</h1></div>	
 </div>
-<ul class="nav nav-pills">
-  <li role="presentation"><a href="index.html">Main page</a></li>
-  <li role="presentation" class="active"><a href="#">Data visualization</a></li>
-</ul>
+<div style="width: 700px; height: 40px">
+	<div id="navigation">
+	<ul class="nav nav-pills">
+	  <li role="presentation"><a href="index.html"><b>Main page</b></a></li>
+	  <li role="presentation" class="active"><a href="#"><b>Data visualization</b></a></li>
+	</ul>
+	</div>
+	<div id="clue">
+	<b>Click</b> a country to reveal info
+	<img src="doc/arrow-down.png" alt="Click a country" height="40" width="40">
+	</div>
+</div>
+
 <div id="dataVis">
 	<div id="mapContainer">
+		<div id="scaleContainer">
+			Renewebale energy / total energy production
+			<div id="barContainer">
+			</div>
+		</div>
 	</div>
 	<div id="infoContainer">
 		<div id="topRowInfo">
@@ -45,7 +59,6 @@ Data Processing
 
 <div id="comment">
   <p class="infoText">
-	Extra info???
   </p>
 </div>
 
@@ -54,3 +67,6 @@ Berend Nannes. 10382976. Programmeerproject 2017.
 </div>
 </body>
 <script src="JavaScript/info.js"></script>
+<script src="JavaScript/map.js"></script>
+<script src="JavaScript/pie.js"></script>
+<script src="JavaScript/line.js"></script>

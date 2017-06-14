@@ -19,6 +19,24 @@ p {
   font-size: 15px;
 }
 
+#headerBar {
+  width: 700px;
+  height: 40px;
+}
+
+#navigation {
+  float: left;
+  width: 300px;
+  height: 100%;
+}
+
+#clue {
+  float: right;
+  width: 350px;
+  height: 100%;
+  font-size: 18px;
+}
+
 #dataVis {
   width: 1200px;
   border: none;
@@ -34,9 +52,18 @@ p {
   float: left;
 }
 
-#mapContainer {
+
+#scaleContainer {
+  position: absolute;
   bottom: 0px;
+  left: 175px;
+  width:300px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 12px;
 }
+
 
 #infoContainer {
   float: right;
@@ -90,21 +117,19 @@ p {
 }
 
 .line { 
-    stroke: steelblue;
-    stroke-width: 2;
-    fill: none;
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
 }
-
-
 	
 .axis path, line {
-    fill: none;
-    stroke: grey;
-    stroke-width: 1;
-    shape-rendering: crispEdges;
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
 }
 .axis text {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 #comment {
@@ -114,8 +139,8 @@ p {
 }
 
 .infoText {
-	width:1000px;
-	padding:30px;
+  width:1000px;
+  padding:30px;
 }
 
 .hoverinfo {

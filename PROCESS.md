@@ -28,3 +28,4 @@ Indeling van de webpagina aangepast. Ook een schaal toegevoegd voor de wereldkaa
 ### Week 3, dinsdag:
 
 Better code hub gekoppeld aan mijn repository. Begonnen met de mainpage: stukje storytelling toegevoegd over verschillende soorten duurzame energie.
+Verder gezorgd dat bij het laden van de data visualisatie standaard de data van Nederland wordt weergegeven zodat er geen lege plek staat.
