@@ -10,15 +10,21 @@ d3.queue(3)
     .defer(function(url, callback) {
 		d3.json(url, function(error, countryData) {
 			if (error) throw error;
-			// draw the data map
-			map(countryData);
-			// show default info
-			setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 100);
+				if (window.location.href.indexOf("infopage") > -1){
+				// draw the data map if on "infopage"
+				map(countryData);
+				// show default info
+				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 100);
+			}
 		})
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")
 	.defer(function(url, callback) {
 		d3.json(url, function(error, data) {
 			if (error) throw error;
+			// if on index.html - draw stacked bar
+			if (window.location.href.indexOf("index") > -1){
+				drawBar(data[0]["WLD"])
+			}
 			// send to pie chart
 			clickCallback = function(code, country, index) {
 				drawPie(data[0][code], country, index, code);

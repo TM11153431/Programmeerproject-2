@@ -35,32 +35,40 @@ Renewable energy is energy that can be unlimitedly collected from natural source
 and human health. It is becoming more and more clear that traditional energy sources like fossil fuel are depletable and also bad for the invironment.
 This <a href="infopage.html">data visualization</a> is meant to give an insight to how many and what types of renewable energy are produced in different parts of the world.
 </p>
+
+<p>
+The following renewable energy sourcecs will be considered in this visualization
+</p>
+
 <table id="sourcesTable">
 <tr>
-<td class="sourceCol">
+<td class="sourceCol" id="Hydropower">
 <h4><b>Hydropower</b></h4>
 A flow of water can drive a water turbine that can generate energy. The most common form of hydropower is a dam,
 but the flow of a river and tidal power can be energy sources as well.
 </td>
-<td class="sourceCol">
+<td class="sourceCol" id="Wind power">
 <h4><b>Wind power</b></h4>
 Wind can be used to run windturbines. Especially places at high altitudes or on the open water are suitable for
 this kind of energy production.
 </td>
-<td class="sourceCol">
+<td class="sourceCol" id="Biomass">
 <h4><b>Biomass</b></h4>
 Biomass consists of organic matter like plant remnants that can be converted into biofuel and produce energy.
 </td>
-<td class="sourceCol">
+<td class="sourceCol" id="Solar power">
 <h4><b>Solar power</b></h4>
 Sunlight can be converted into electricity. Solar panels are the most common way to achieve this.
 </td>
-<td class="sourceCol">
+<td class="sourceCol" id="Geothermal">
 <h4><b>Geothermal</b></h4>
 Water exposed to the earths internal heat is heated to such an extent that it can be used to run turbines that can generate energy.
 </td>
 </tr>
 </table>
+
+<div id="stackedBarContainer">
+</div>
 
 </div>
 
@@ -70,6 +78,6 @@ Berend Nannes. 10382976. Programmeerproject 2017.
 </div>
 </body>
 <script src="JavaScript/loaddata.js"></script>
-<script src="JavaScript/map.js"></script>
 <script src="JavaScript/pie.js"></script>
 <script src="JavaScript/line.js"></script>
+<script src="JavaScript/stackedbar.js"></script>

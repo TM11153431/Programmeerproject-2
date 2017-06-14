@@ -88,6 +88,9 @@ function drawPie(data, country, index, code) {
 	.style("font-size", "12px")
 	.call(d3.legend);
 	
-	// go to line graph
+	if (window.location.href.indexOf("infopage") > -1) {
+    // go to line graph
 	lineCallback(code)
+	}
+
 };

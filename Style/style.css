@@ -112,9 +112,10 @@ p {
 
 .sourceCol {
   width: 240px;
-  padding-right: 10px;
+  padding: 10px;
   vertical-align: top;
 }
+
 
 .line { 
   stroke: steelblue;
@@ -170,4 +171,8 @@ p {
 .red .active a,
 .red .active a:hover {
     background-color: red;
+}
+
+td {
+border-radius: 30px;
 }
