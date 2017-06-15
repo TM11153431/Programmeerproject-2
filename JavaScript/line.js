@@ -59,5 +59,46 @@ function drawLine(data,code) {
 	   .append("text")
 		.attr("transform", "translate(15,120) rotate(-90)")
 		.text("% renewable energy");
+		
+	// focus lines or crosshair
+	var focus = svg.append('g').style('display', 'none');		
+	focus.append('line')
+		.attr('id', 'focusLineX')
+		.attr('class', 'focusLine');
+	focus.append('line')
+		.attr('id', 'focusLineY')
+		.attr('class', 'focusLine');
+	
+	// bisector to return index of mouse position
+	var bisectDate = d3.bisector(function(d) { return d.year; }).left;
+	
+	// overlay for crosshairs
+	svg.append('rect')
+		.attr('class', 'overlay')
+		.attr('width', width)
+		.attr('height', height)
+		.on('mouseover', function() { focus.style('display', null); })
+		.on('mouseout', function() { focus.style('display', 'none'); })
+		.on('mousemove', function() { 
+			var mouse = d3.mouse(this);
+			var mouseDate = x.invert(mouse[0]);
+			var i = bisectDate(data, mouseDate);
+			
+			var d0 = data[i - 1].year
+            var d1 = data[i].year;
+			var d = mouseDate - d0[0] > d1[0] - mouseDate ? i : i-1;		
+			
+			var x_val = x(data[d].year);
+            var y_val = y(data[d].percentage);
+			
+
+			focus.select('#focusLineX')
+				.attr('x1', x_val).attr('y1', 0)
+				.attr('x2', x_val).attr('y2', height);
+			focus.select('#focusLineY')
+				.attr('x1', 0).attr('y1', y_val)
+				.attr('x2', width).attr('y2', y_val);
+			
+		});
 	
 };

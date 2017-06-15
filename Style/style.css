@@ -154,6 +154,18 @@ p {
   top: 450px;
 }
 
+.overlay {
+  fill: none;
+  stroke: none;
+  pointer-events: all;
+}
+
+.focusLine {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+
 
 .bottom {
   position: fixed;

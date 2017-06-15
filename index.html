@@ -37,7 +37,7 @@ This <a href="infopage.html">data visualization</a> is meant to give an insight 
 </p>
 
 <p>
-The following renewable energy sourcecs will be considered in this visualization
+The following renewable energy sourcecs will be considered in this visualization:
 </p>
 
 <table id="sourcesTable">
@@ -70,6 +70,16 @@ Water exposed to the earths internal heat is heated to such an extent that it ca
 <div id="stackedBarContainer">
 </div>
 
+The bars represent the contribution of the different renewable energy sources to the total renewable energy production.
+<img src="doc/arrow-up.png" alt="Hover a bar" height="30" width="30"> <b>Hover</b> to reveal the corresponding energy source.
+
+<div id="lineContainer">
+</div>
+
+<script>
+//draw line graph
+setTimeout(function(){lineCallback("WLD");}, 100);
+</script>
 </div>
 
 
@@ -81,3 +91,4 @@ Berend Nannes. 10382976. Programmeerproject 2017.
 <script src="JavaScript/pie.js"></script>
 <script src="JavaScript/line.js"></script>
 <script src="JavaScript/stackedbar.js"></script>
+<script src="JavaScript/barchart.js"></script>

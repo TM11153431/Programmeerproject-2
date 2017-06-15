@@ -37,6 +37,9 @@ d3.queue(3)
 			// send to line graph
 			lineCallback = function(code) {
 				drawLine(data[0][code], code);
+				if (window.location.href.indexOf("index") > -1){
+					barChart(data[0]);
+				}
 			}
 		}) 
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/linedata.json")

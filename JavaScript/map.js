@@ -11,7 +11,8 @@ function map(countryData) {
 	var maxIndex = Math.max.apply(null, indexValues);
 	
 	// set colors for scale
-	var colors = ["#92ff8c","#097703"];
+	//var colors = ["#92ff8c","#097703"]; 
+	var colors = ["#f7fcb9","#0a8430"];
 	
 	// create color scale
 	var paletteScale = d3.scale.linear()
