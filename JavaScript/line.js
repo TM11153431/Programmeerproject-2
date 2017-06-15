@@ -64,10 +64,19 @@ function drawLine(data,code) {
 	var focus = svg.append('g').style('display', 'none');		
 	focus.append('line')
 		.attr('id', 'focusLineX')
-		.attr('class', 'focusLine');
+		.attr('class', 'focusLine')
+		.attr('stroke-dasharray', '5, 5');
 	focus.append('line')
 		.attr('id', 'focusLineY')
-		.attr('class', 'focusLine');
+		.attr('class', 'focusLine')
+		.attr('stroke-dasharray', '5, 5');
+	focus.append('circle')
+		.attr('id', 'focusCircle')
+		.attr('r', 2)
+		.attr('class', 'circle focusCircle');
+	focus.append("text")
+		.attr("id","focusText");
+		
 	
 	// bisector to return index of mouse position
 	var bisectDate = d3.bisector(function(d) { return d.year; }).left;
@@ -98,7 +107,13 @@ function drawLine(data,code) {
 			focus.select('#focusLineY')
 				.attr('x1', 0).attr('y1', y_val)
 				.attr('x2', width).attr('y2', y_val);
-			
+			focus.select('#focusCircle')
+				.attr('cx', x_val)
+				.attr('cy', y_val);
+			focus.select("#focusText")
+				.attr('x', x_val)
+				.attr('y', y_val)
+				.text(data[d].percentage + "%");
 		});
 	
 };

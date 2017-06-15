@@ -8,7 +8,7 @@ function barChart(data) {
 	console.log(countries)
 	
 	for (s of countries) {
-		console.log(s);
+		console.log(s, data[s]);
 	}
 	
 }

@@ -162,8 +162,12 @@ p {
 
 .focusLine {
   fill: none;
-  stroke: steelblue;
+  stroke: grey;
   stroke-width: 1px;
+}
+
+.focusCircle {
+  fill: black;
 }
 
 

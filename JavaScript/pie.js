@@ -21,7 +21,12 @@ function drawPie(data, country, index, code) {
 		
 	// define div for tooltip
 	var div = d3.select("#pieContainer").append("div")	
-		.attr("class", "tooltip");
+		.attr("class", "tooltip")
+		.style("width", "170px")
+		.style("height", "125px")
+		.style("opacity", .999)
+		.html("<div style='font-size: 18px'><b>Hover</b> a slice to reveal exact percentage</div>");
+		
 	
 	// create pie chart
 	
@@ -61,9 +66,7 @@ function drawPie(data, country, index, code) {
 				.duration(200)		
 				.style("opacity", .999);	
 			div.html("<div style='font-size: 20px; color:"+ color(d.data.source) +";'><b>" + d.data.source + "</b></div><div style='font-size:15px'> provides <b><u>"
-				+ (d.data.percentage*100).toFixed(2)+ "% </b></u> of the total renewable energy production." + "</div><br/>")
-				.style("width", "170px")
-				.style("height", "125px");
+				+ (d.data.percentage*100).toFixed(2)+ "% </b></u> of the total renewable energy production." + "</div><br/>");
         })
         .on("mouseout", function(d) {
             d3.select(this).select("path").transition()
