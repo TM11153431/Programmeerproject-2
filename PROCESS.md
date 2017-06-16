@@ -25,11 +25,22 @@ Vandaag moest ik werken, dus kon ik helaas niet mijn product presenteren of daar
 Legenda en tooltip toegevoegd aan de pie chart. Bij mouseover wordt nu de exacte data van een taartpunt weergegeven. 
 Indeling van de webpagina aangepast. Ook een schaal toegevoegd voor de wereldkaart chloropleet voor extra duidelijkheid.
 
-### Week 3, dinsdag:
+### Week 2, dinsdag:
 
 Better code hub gekoppeld aan mijn repository. Begonnen met de mainpage: stukje storytelling toegevoegd over verschillende soorten duurzame energie.
 Verder gezorgd dat bij het laden van de data visualisatie standaard de data van Nederland wordt weergegeven zodat er geen lege plek staat.
 
-### Week 3 woensdag:
+### Week 2 woensdag:
 
 Mainpage storytelling aangepast. Een enkele interactieve stacked bar toegevoegd om de verschillende soorten groene energie weer te geven.
+De legenda van de datamap verder verbeterd met uitleg. Javascript verdeeld in meerdere kleine bestanden om het overzicht te houden.
+Bij de datavisualisatie aanwijzingen met pijltjes gemaakt om het gebruiksvriendelijker te maken.
+
+### Week 2 donderdag:
+
+Line graph interactief gemaakt met behulp van crosshairs. Tooltip voor de pie chart geeft als default een aanwijzing om te hoveren over de taartpunten.
+Begonnen met het idee om een barchart met de top 10 producerende of stijgende landen te maken. Hiervoor moet de data gefilterd worden; best lastig in json.
+
+### Week 2, vrijdag:
+
+In de vrijdagpresentatie de voortgang gepresenteerd en feedback ontvangen.
