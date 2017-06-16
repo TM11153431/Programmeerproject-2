@@ -14,7 +14,7 @@ d3.queue(3)
 				// draw the data map if on "infopage"
 				map(countryData);
 				// show default info
-				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 100);
+				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 200);
 			}
 		})
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")

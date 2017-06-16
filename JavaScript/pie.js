@@ -25,7 +25,7 @@ function drawPie(data, country, index, code) {
 		.style("width", "170px")
 		.style("height", "125px")
 		.style("opacity", .999)
-		.html("<div style='font-size: 18px'><b>Hover</b> a slice to reveal exact percentage</div>");
+		.html("<div style='font-size: 18px'><b>Hover</b> <img src='doc/arrow-diagonal.png' alt='Click a country' height='40' width='40'><br> a slice to reveal exact percentage</div>");
 		
 	
 	// create pie chart
