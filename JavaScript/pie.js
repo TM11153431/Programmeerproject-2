@@ -24,7 +24,7 @@ function drawPie(data, country, index, code) {
 		.attr("class", "tooltip")
 		.style("width", "170px")
 		.style("height", "125px")
-		.style("opacity", .999)
+		.style("opacity", 1)
 		.html("<div style='font-size: 18px'><b>Hover</b> <img src='doc/arrow-diagonal.png' alt='Click a country' height='30' width='30'><br> a slice to reveal exact percentage</div>");
 		
 	
@@ -64,7 +64,7 @@ function drawPie(data, country, index, code) {
                .attr("d", arcOver);
 			div.transition()		
 				.duration(200)		
-				.style("opacity", .999);	
+				.style("opacity",1);	
 			div.html("<div style='font-size: 20px; color:"+ color(d.data.source) +";'><b>" + d.data.source + "</b></div><div style='font-size:15px'> provides <b><u>"
 				+ (d.data.percentage*100).toFixed(2)+ "% </b></u> of the total renewable energy production." + "</div><br/>");
         })

@@ -51,7 +51,7 @@ function map(countryData) {
 			// style properties
 			borderColor: 'black',
 			borderWidth: 0.6,
-			highlightFillColor: 'black',
+			highlightBorderWidth: 2,
 			highlightBorderColor: 'black',
 		},
 		// set default fill color

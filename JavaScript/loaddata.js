@@ -38,7 +38,7 @@ d3.queue(3)
 			lineCallback = function(code) {
 				drawLine(data[0][code], code);
 				if (window.location.href.indexOf("index") > -1){
-					barChart(data[0]);
+					filterData(data[0]);
 				}
 			}
 		}) 
