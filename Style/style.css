@@ -99,7 +99,6 @@ p {
   padding-left: 20px;
   padding-top: 20px;
   height: 300px;
-  float: left;
 }
 
 #mainInfo {
@@ -182,19 +181,25 @@ width: 1000px;
 height: 350px;
 }
 
-#barchartContainer {
-	height: 350px;
-	width: 500px;
-}
-
 .chart rect {
   fill: steelblue;
+}
+
+.chart rect:hover {
+  fill: green;
 }
 
 .chart text {
   fill: black;
   font: 10px sans-serif;
   text-anchor: middle;
+}
+
+.barTool {
+  position:absolute;
+  font-family: verdana;
+  right: 370px;
+  z-index: 1;
 }
 
 

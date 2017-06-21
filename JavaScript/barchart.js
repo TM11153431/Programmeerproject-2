@@ -7,7 +7,7 @@ function filterData(data) {
 	var topCountries = []
 	var topRisers = []
 	
-	countries = Object.keys(data)
+	countries = Object.keys(data)	
 	
 	for (s of countries) {
 		
@@ -50,10 +50,29 @@ function filterData(data) {
 	topRisers.sort(compare)
 	
 	drawBarchart(topRisers);
+	
+	d3.selectAll("input").on("change", function change() {
+		var value = this.value;
+		if (value == "risers") {drawBarchart(topRisers);}
+		else {drawBarchart(topCountries)};
+	})
+	.transition()
+        .duration(1000);
 }
 
 function drawBarchart(data) {
 	
+	// remove old data
+	d3.select(".chart").remove();
+	d3.select(".barTool").remove();
+	
+	// define div for tooltip
+	var div = d3.select("#barchartContainer").append("div")	
+		.attr("class", "barTool")
+		.style("width", "300px")
+		.style("height", "125px")
+		.style("opacity", 1);
+		
 		
 	var margin = {top: 30, right: 30, bottom: 60, left: 60},
 		width = 500 - margin.left - margin.right,
@@ -102,8 +121,22 @@ function drawBarchart(data) {
 		.attr("x", function(d) { return x(d.country); })
 		.attr("y", function(d) { return y(d.value); })
 		.attr("height", function(d) { return height - y(d.value); })
-		.attr("width", x.rangeBand());
+		.attr("width", x.rangeBand())
+		.on('mouseover', function(d) {
+			div.html("<div><b>"+ countryName(d.country)+ "</b><br>"+ Math.round(d.value) + "%" +"</div><br/>");
+			})
+		;
+		
+
 }
+
+function countryName(id) {
+	var countries = Datamap.prototype.worldTopo.objects.world.geometries;
+	for (var i = 0, j = countries.length; i < j; i++) {
+	if (id == countries[i].id) {return countries[i].properties.name};
+	}
+}
+
 
 function replace(array, index, newObject) {
 	array.splice(index, 1);

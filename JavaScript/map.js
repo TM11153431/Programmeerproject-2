@@ -51,8 +51,11 @@ function map(countryData) {
 			// style properties
 			borderColor: 'black',
 			borderWidth: 0.6,
-			highlightBorderWidth: 2,
-			highlightBorderColor: 'black',
+			highlightBorderWidth: 1.5,
+			highlightBorderColor: "black",
+			highlightFillColor: function(geo) {
+				return geo["fillColor"];
+			}
 		},
 		// set default fill color
 		fills: {
@@ -109,3 +112,4 @@ function map(countryData) {
 	
 	
 };
+

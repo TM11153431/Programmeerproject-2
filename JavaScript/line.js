@@ -38,7 +38,7 @@ function drawLine(data,code) {
 	
 	// Scale the range of the data
 	x.domain(d3.extent(data, function(d) {return d.year; }));
-	y.domain([0.9*d3.min(data, function(d) { return d.percentage; }), d3.max(data, function(d) { return d.percentage; })]);
+	y.domain([0.9*d3.min(data, function(d) { return d.percentage; }), 1.1*d3.max(data, function(d) { return d.percentage; })]);
 	
 	// Add the valueline path.
 	svg.append("path")	
@@ -75,7 +75,8 @@ function drawLine(data,code) {
 		.attr('r', 2)
 		.attr('class', 'circle focusCircle');
 	focus.append("text")
-		.attr("id","focusText");
+		.attr("id","focusText")
+		.attr("transform", "translate(5,-5)");
 		
 	
 	// bisector to return index of mouse position

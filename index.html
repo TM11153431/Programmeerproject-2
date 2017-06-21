@@ -73,12 +73,36 @@ Water exposed to the earths internal heat is heated to such an extent that it ca
 The bars represent the contribution of the different renewable energy sources to the total renewable energy production.
 <img src="doc/arrow-up.png" alt="Hover a bar" height="30" width="30"> <b>Hover</b> to reveal the corresponding energy source.
 
-<div id="mainVis">
-	<div id="lineContainer">
-	</div>
-	<div id="barchartContainer">
-	</div>
-</div>
+<table>
+	<tr>
+		<td class="sourceCol">
+			<h4><b>Renewable energy production</b></h4>
+			<b>In the world</b>
+		</td>
+		<td class="sourceCol">
+			<h4><b>TOP-10 countries</b></h4>
+			<form>
+				<label><input type="radio" name="mode" value="producers"> Producing</label>
+				<label><input type="radio" name="mode" value="risers" checked> Increasing</label>
+				
+			</form>
+		</td>
+
+	</tr>
+	<tr>
+		<td>
+		<div id="lineContainer">
+		</div>
+		</td>
+		<td>
+			<div id="barchartContainer">
+			
+
+			</div>
+		</td>
+	</tr>
+</table>
+
 
 <script>
 //draw line graph
