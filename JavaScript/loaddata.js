@@ -17,8 +17,8 @@ d3.queue(3)
 				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 500);
 				slideCallback = function(year) {
 					d3.select("#yearContainer")
-					.html(year);
-					//.style("top", pos + "px");
+					.html(year)
+					.style("top", (595 + (2014-year)*(175/15)) + "px");
 					map(countryData[0][year][0]);
 				}
 			}

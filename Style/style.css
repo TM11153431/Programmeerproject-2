@@ -250,7 +250,9 @@ input[type=range][orient=vertical]
 }
 
 #yearContainer {
-  position: relative;
-  font-size: 18px;
+  position: absolute;
+  left: 370px;
+  top: 595px;
+  font-size: 14px;
   font-weight: bold;
 }
