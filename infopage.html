@@ -24,6 +24,10 @@ Data Processing
 <div class="jumbotron text-center">
 	<div class="top"><h1>Renewable Energy in the World</h1></div>	
 </div>
+
+<div id="wrapper">
+
+
 <div style="width: 700px; height: 40px">
 	<div id="navigation">
 	<ul class="nav nav-pills">
@@ -57,14 +61,39 @@ Data Processing
 	</div>
 </div>
 
+<input type="range" min="2000" max="2014" value="2014" step="1" list="steplist" id="rangeInput" oninput="output.value = rangeInput.value" orient="vertical">
+<datalist id="steplist">
+    <option>2000</option>
+    <option>2001</option>
+    <option>2002</option>
+    <option>2003</option>
+    <option>2004</option>
+	<option>2005</option>
+    <option>2006</option>
+    <option>2007</option>
+    <option>2008</option>
+    <option>2009</option>
+	<option>2010</option>
+    <option>2011</option>
+    <option>2012</option>
+    <option>2013</option>
+	<option>2014</option>
+</datalist>
+<output id="output" for="rangeInput">2014</output>
+
+</div>
+
 <div id="comment">
   <p class="infoText">
   </p>
 </div>
 
+
+
 <div class="bottom">
 Berend Nannes. 10382976. Programmeerproject 2017.
 </div>
+
 </body>
 <script src="JavaScript/loaddata.js"></script>
 <script src="JavaScript/map.js"></script>

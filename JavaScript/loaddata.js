@@ -12,9 +12,9 @@ d3.queue(3)
 			if (error) throw error;
 				if (window.location.href.indexOf("infopage") > -1){
 				// draw the data map if on "infopage"
-				map(countryData);
+				map(countryData[0]);
 				// show default info
-				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 200);
+				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 500);
 			}
 		})
 	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")

@@ -24,6 +24,10 @@ Data Processing
 <div class="jumbotron text-center">
 	<div class="top"><h1>Renewable Energy in the World</h1></div>	
 </div>
+
+<div id="wrapper">
+
+
 <ul class="nav nav-pills">
   <li role="presentation" class="active"><a href="#"><b>Main page</b></a></li>
   <li role="presentation"><a href="infopage.html"><b>Data visualization</b></a></li>
@@ -87,6 +91,10 @@ The bars represent the contribution of the different renewable energy sources to
 				
 			</form>
 		</td>
+		<td class="sourceCol">
+		<h4><b>Honourable mentions</b></h4>
+
+		</td>
 
 	</tr>
 	<tr>
@@ -100,13 +108,37 @@ The bars represent the contribution of the different renewable energy sources to
 
 			</div>
 		</td>
+		<td>
+				<p>
+		<b>Paraguay</b><br>
+		One of the worlds largest dams, Itaipu dam, is located in Paraguay. It provides 90% of Paraguay's
+		electricity, but also 20% of Brazil's.
+		</p>
+		<p>
+		<b>Iceland</b><br>
+		Iceland is built on a volcano, so it's perfect to benefit from the earths warmth
+		and produce geothermal energy.
+		Iceland also has a lot of hydroelectric plants.
+		</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="sourceCol">
+		The line graph above shows how much renewable energy was produced every year since 2000
+		relative to the total energy production in the world.
+		</td>
+		<td class="sourceCol">
+		The barchart shows the 10 top renewable energy producing countries 
+		or the 10 countries that saw the biggest increase in renewable energy production
+		since the year 2000.
+		</td>
 	</tr>
 </table>
 
 
 <script>
 //draw line graph
-setTimeout(function(){lineCallback("WLD");}, 200);
+setTimeout(function(){lineCallback("WLD");}, 500);
 </script>
 </div>
 
@@ -114,6 +146,14 @@ setTimeout(function(){lineCallback("WLD");}, 200);
 <div class="bottom">
 Berend Nannes. 10382976. Programmeerproject 2017.
 </div>
+
+</div>
+
+<div id="comment">
+  <p class="infoText">
+  </p>
+</div>
+
 </body>
 <script src="JavaScript/loaddata.js"></script>
 <script src="JavaScript/pie.js"></script>

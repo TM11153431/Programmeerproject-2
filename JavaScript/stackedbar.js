@@ -1,7 +1,7 @@
 function drawBar(data) {
 	
 	// set size
-	var width = 1200;
+	var width = 1140;
 	var height = 50;
 
 	// initiate svg

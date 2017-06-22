@@ -69,12 +69,11 @@ function drawBarchart(data) {
 	// define div for tooltip
 	var div = d3.select("#barchartContainer").append("div")	
 		.attr("class", "barTool")
-		.style("width", "300px")
-		.style("height", "125px")
+		.style("display", "none")
 		.style("opacity", 1);
 		
 		
-	var margin = {top: 30, right: 30, bottom: 60, left: 60},
+	var margin = {top: 30, right: 50, bottom: 60, left: 60},
 		width = 500 - margin.left - margin.right,
 		height = 300 - margin.top - margin.bottom;
 	
@@ -123,9 +122,12 @@ function drawBarchart(data) {
 		.attr("height", function(d) { return height - y(d.value); })
 		.attr("width", x.rangeBand())
 		.on('mouseover', function(d) {
-			div.html("<div><b>"+ countryName(d.country)+ "</b><br>"+ Math.round(d.value) + "%" +"</div><br/>");
+			div.html("<b>"+ countryName(d.country)+ "</b><br>"+ Math.round(d.value) + "%" +"</div><br/>")
+			.style("display", "inline")
+			.style("left", (d3.event.pageX) + "px")
+			.style("top", (d3.event.pageY) + "px");
 			})
-		;
+		.on('mouseout', function(d) {div.style("display", "none")});
 		
 
 }

@@ -3,7 +3,7 @@
 function map(countryData) {
 	
 	// retrieve json data
-	dataset = countryData[0];
+	dataset = countryData;
 	
 	// get min and max values
 	var indexValues = Object.keys(dataset).map(function (key) { return dataset[key].percentage; } );
@@ -12,7 +12,7 @@ function map(countryData) {
 	
 	// set colors for scale
 	//var colors = ["#92ff8c","#097703"]; 
-	var colors = ["#f7fcb9","#0a8430"];
+	var colors = ["#f7fcb9","#064f00"];
 	
 	// create color scale
 	var paletteScale = d3.scale.linear()
