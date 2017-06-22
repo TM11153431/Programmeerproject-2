@@ -12,12 +12,18 @@ d3.queue(3)
 			if (error) throw error;
 				if (window.location.href.indexOf("infopage") > -1){
 				// draw the data map if on "infopage"
-				map(countryData[0]);
+				map(countryData[0]["2014"][0]);
 				// show default info
 				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 500);
+				slideCallback = function(year) {
+					d3.select("#yearContainer")
+					.html(year);
+					//.style("top", pos + "px");
+					map(countryData[0][year][0]);
+				}
 			}
 		})
-	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")
+	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/newmapdata.json")
 	.defer(function(url, callback) {
 		d3.json(url, function(error, data) {
 			if (error) throw error;

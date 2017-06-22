@@ -61,7 +61,8 @@ Data Processing
 	</div>
 </div>
 
-<input type="range" min="2000" max="2014" value="2014" step="1" list="steplist" id="rangeInput" oninput="output.value = rangeInput.value" orient="vertical">
+<div>
+<input type="range" min="2000" max="2014" value="2014" step="1" list="steplist" id="rangeInput" oninput="slideCallback(rangeInput.value)" orient="vertical">
 <datalist id="steplist">
     <option>2000</option>
     <option>2001</option>
@@ -79,7 +80,13 @@ Data Processing
     <option>2013</option>
 	<option>2014</option>
 </datalist>
-<output id="output" for="rangeInput">2014</output>
+<div id="yearContainer">
+2014
+</div>
+
+</div>
+</div>
+
 
 </div>
 

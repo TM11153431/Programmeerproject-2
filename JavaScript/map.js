@@ -2,6 +2,10 @@
 // create data map
 function map(countryData) {
 	
+	// remove old
+	d3.select("#map").remove();
+	d3.select("#barContainer").html("");
+		
 	// retrieve json data
 	dataset = countryData;
 	
@@ -30,6 +34,7 @@ function map(countryData) {
 		height: 550,
 		projection: "mercator",
 		done: function(datamap) {
+				datamap.svg.attr("id","map");
 				datamap.svg.selectAll('.datamaps-subunit').on('click', function(geo) {
 					var code = geo.id;
 					clickCallback(code, geo.properties.name, dataset[code].percentage);
