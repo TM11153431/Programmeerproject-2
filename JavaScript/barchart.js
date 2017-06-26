@@ -46,21 +46,23 @@ function filterData(data) {
 			}
 		}
 	}
+	// sort descending
 	topCountries.sort(compare)
 	topRisers.sort(compare)
 	
+	// create default barchart
 	drawBarchart(topRisers);
 	
+	// radio button functionality
 	d3.selectAll("input").on("change", function change() {
 		var value = this.value;
 		if (value == "risers") {drawBarchart(topRisers);}
 		else {drawBarchart(topCountries)};
-	})
-	.transition()
-        .duration(1000);
+	});
 }
 
 function drawBarchart(data) {
+	// creates barchart
 	
 	// remove old data
 	d3.select(".chart").remove();
@@ -72,28 +74,28 @@ function drawBarchart(data) {
 		.style("display", "none")
 		.style("opacity", 1);
 		
-		
+	// set margins
 	var margin = {top: 30, right: 50, bottom: 60, left: 60},
 		width = 500 - margin.left - margin.right,
 		height = 300 - margin.top - margin.bottom;
 	
-		
+	// set x and y scales
 	var x = d3.scale.ordinal()
 		.rangeBands([0, width], .1)
 		.domain(data.map(function(d) { return d.country; }));
-
 	var y = d3.scale.linear()
 		.range([height, 0])
 		.domain([0, d3.max(data, function(d) { return d.value; })]);
-		
+	
+	// define axes
 	var xAxis = d3.svg.axis()
 		.scale(x)
 		.orient("bottom");
-
 	var yAxis = d3.svg.axis()
 		.scale(y)
 		.orient("left");
-		
+	
+	// set svg element
 	var chart = d3.select("#barchartContainer")
 	   .append("svg")
 		.attr("class","chart")
@@ -104,15 +106,16 @@ function drawBarchart(data) {
 		
 	var barWidth = width / data.length;
 
+	// draw axes
 	chart.append("g")
 		.attr("class", "x axis")
 		.attr("transform", "translate(0," + height + ")")
-		.call(xAxis);
-		
+		.call(xAxis);		
 	chart.append("g")
 		.attr("class", "y axis")
 		.call(yAxis)
 
+	// draw bars
 	 chart.selectAll(".bar")
 		.data(data)
 	   .enter().append("rect")
@@ -133,6 +136,7 @@ function drawBarchart(data) {
 }
 
 function countryName(id) {
+	// get the name of a country given the ISO-3 code
 	var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 	for (var i = 0, j = countries.length; i < j; i++) {
 	if (id == countries[i].id) {return countries[i].properties.name};
@@ -141,11 +145,13 @@ function countryName(id) {
 
 
 function replace(array, index, newObject) {
+	// replaces and array element
 	array.splice(index, 1);
 	array.push(newObject);
 }
 
 function compare(a,b) {
+	// compare function for sorting (descending)
   if (a.value > b.value)
     return -1;
   if (a.value < b.value)

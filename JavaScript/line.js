@@ -117,4 +117,10 @@ function drawLine(data,code) {
 				.text(data[d].percentage + "%");
 		});
 	
+	function yearDot(year) {
+		var yVal = bisectDate(year);
+		console.log(year, yVal);
+	}
+		
+	
 };

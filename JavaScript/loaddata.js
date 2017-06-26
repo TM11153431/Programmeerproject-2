@@ -16,10 +16,14 @@ d3.queue(3)
 				// show default info
 				setTimeout(function(){clickCallback("NLD", "Netherlands", "4.72");}, 500);
 				slideCallback = function(year) {
+					// activated by time slider
 					d3.select("#yearContainer")
 					.html(year)
+					//calculate position of year text
 					.style("top", (595 + (2014-year)*(175/15)) + "px");
+					// draw map for that year
 					map(countryData[0][year][0]);
+					//yearDot(year);
 				}
 			}
 		})
