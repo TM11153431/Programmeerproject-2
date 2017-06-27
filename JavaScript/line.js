@@ -1,9 +1,15 @@
-// draw line graph
+/*
+line.js
+Programmeerproject
+Berend Nannes
+*/
+
 function drawLine(data,code) {
+	
+	/** Draws line graph **/
 	
 	// remove old graph
 	d3.select("#lineGraph").remove();
-	
 	
 	// Set the dimensions of the canvas / graph
 	var	margin = {top: 10, right: 30, bottom: 30, left: 30},
@@ -13,7 +19,6 @@ function drawLine(data,code) {
 	// Set the ranges
 	var	x = d3.scale.linear().range([0, width]);
 	var	y = d3.scale.linear().range([height, 0]);
-
 	 
 	// Define the axes
 	var	xAxis = d3.svg.axis().scale(x)
@@ -35,7 +40,6 @@ function drawLine(data,code) {
 			.attr("height", height + margin.top + margin.bottom)
 		.append("g")
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
 	
 	// Scale the range of the data
 	x.domain(d3.extent(data, function(d) {return d.year; }));
@@ -61,81 +65,82 @@ function drawLine(data,code) {
 		.attr("transform", "translate(15,120) rotate(-90)")
 		.text("% renewable energy");
 		
-	// focus lines or crosshair
-	var focus = svg.append('g').style('display', 'none');		
-	focus.append('line')
-		.attr('id', 'focusLineX')
-		.attr('class', 'focusLine')
-		.attr('stroke-dasharray', '5, 5');
-	focus.append('line')
-		.attr('id', 'focusLineY')
-		.attr('class', 'focusLine')
-		.attr('stroke-dasharray', '5, 5');
-	focus.append('circle')
-		.attr('id', 'focusCircle')
-		.attr('r', 2)
-		.attr('class', 'circle focusCircle');
-	
+	// initiate focus crosshair elements
+	var focus = svg.append("g").style("display", "none");		
+	focus.append("line")
+		.attr("id", "focusLineX")
+		.attr("class", "focusLine")
+		.attr("stroke-dasharray", "5, 5");
+	focus.append("line")
+		.attr("id", "focusLineY")
+		.attr("class", "focusLine")
+		.attr("stroke-dasharray", "5, 5");
+	focus.append("circle")
+		.attr("id", "focusCircle")
+		.attr("r", 2)
+		.attr("class", "circle focusCircle");	
 	focus.append("text")
 		.attr("id","focusText")
 		.attr("transform", "translate(5,-5)");
 		
-	
 	// bisector to return index of mouse position
 	var bisectDate = d3.bisector(function(d) { return d.year; }).left;
 	
 	// overlay for crosshairs
-	svg.append('rect')
-		.attr('class', 'overlay')
-		.attr('width', width)
-		.attr('height', height)
-		.on('mouseover', function() { focus.style('display', null); })
-		.on('mouseout', function() { focus.style('display', 'none'); })
-		.on('mousemove', function() { 
+	svg.append("rect")
+		.attr("class", "overlay")
+		.attr("width", width)
+		.attr("height", height)
+		.on("mouseover", function() { focus.style("display", null); })
+		.on("mouseout", function() { focus.style("display", "none"); })
+		.on("mousemove", function() {
+			
+			// get mouse position
 			var mouse = d3.mouse(this);
 			var mouseDate = x.invert(mouse[0]);
 			var i = bisectDate(data, mouseDate);
 			
+			// find closest data point
 			var d0 = data[i - 1].year
             var d1 = data[i].year;
-			var d = mouseDate - d0[0] > d1[0] - mouseDate ? i : i-1;		
+			var d = mouseDate - d0[0] > d1[0] - mouseDate ? i : i-1;
 			
+			// get coordinates for crosshair
 			var x_val = x(data[d].year);
             var y_val = y(data[d].percentage);
 			
-
-			focus.select('#focusLineX')
-				.attr('x1', x_val).attr('y1', 0)
-				.attr('x2', x_val).attr('y2', height);
-			focus.select('#focusLineY')
-				.attr('x1', 0).attr('y1', y_val)
-				.attr('x2', width).attr('y2', y_val);
-			focus.select('#focusCircle')
-				.attr('cx', x_val)
-				.attr('cy', y_val);
+			// draw the crosshair
+			focus.select("#focusLineX")
+				.attr("x1", x_val).attr("y1", 0)
+				.attr("x2", x_val).attr("y2", height);
+			focus.select("#focusLineY")
+				.attr("x1", 0).attr("y1", y_val)
+				.attr("x2", width).attr("y2", y_val);
+			focus.select("#focusCircle")
+				.attr("cx", x_val)
+				.attr("cy", y_val);
 			focus.select("#focusText")
-				.attr('x', x_val)
-				.attr('y', y_val)
+				.attr("x", x_val)
+				.attr("y", y_val)
 				.text(data[d].percentage + "%");
 		});
 	
-	// show year dot if on infopage
+	// show year dot (if on infopage)
 	if (window.location.href.indexOf("infopage") > -1) {
 		currentYear = document.getElementById("yearContainer").innerHTML;
 		yearDot(currentYear);
 	}
 	
-	
 	function yearDot(year) {
+		// draws focus circle at selected year
 		var yearIndex = bisectDate(data, year);
 		var xVal = x(data[yearIndex].year);
 		var yVal = y(data[yearIndex].percentage);
-		svg.append('circle')
-			.attr('id', 'yearCircle')
-			.attr('r', 6)
-			.attr('cx', xVal)
-			.attr('cy', yVal);
-		console.log(year, yVal);
+		svg.append("circle")
+			.attr("id", "yearCircle")
+			.attr("r", 6)
+			.attr("cx", xVal)
+			.attr("cy", yVal);
 	}
 		
 	

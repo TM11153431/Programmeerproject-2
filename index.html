@@ -1,13 +1,14 @@
 <!---
-infopage.html
+index.html
 Berend Nannes
-Data Processing
+Programmeerproject
 -->
 
 <!DOCTYPE html>
 <meta charset="utf-8">
+
 <head>
-	<title>D3 Map</title>
+	<title>Renewable Energy in the World</title>
 	<link href="Style/style.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -17,6 +18,11 @@ Data Processing
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="JavaScript/d3.legend.js"></script>
+	<script src="JavaScript/loaddata.js"></script>
+	<script src="JavaScript/pie.js"></script>
+	<script src="JavaScript/line.js"></script>
+	<script src="JavaScript/stackedbar.js"></script>
+	<script src="JavaScript/barchart.js"></script>
 </head>
 
 <body>
@@ -28,135 +34,118 @@ Data Processing
 <div id="wrapper">
 
 
-<ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#"><b>Main page</b></a></li>
-  <li role="presentation"><a href="infopage.html"><b>Data visualization</b></a></li>
-</ul>
+	<ul class="nav nav-pills">
+	  <li role="presentation" class="active"><a href="#"><b>Main page</b></a></li>
+	  <li role="presentation"><a href="infopage.html"><b>Data visualization</b></a></li>
+	</ul>
 
-<div id="mainInfo">
-<p>
-Renewable energy is energy that can be unlimitedly collected from natural sources. Using renewable energy does not affect the environment
-and human health. It is becoming more and more clear that traditional energy sources like fossil fuel are depletable and also bad for the invironment.
-This <a href="infopage.html">data visualization</a> is meant to give an insight to how many and what types of renewable energy are produced in different parts of the world.
-</p>
-
-<p>
-The following renewable energy sourcecs will be considered in this visualization:
-</p>
-
-<table id="sourcesTable">
-<tr>
-<td class="sourceCol" id="Hydropower">
-<h4><b>Hydropower</b></h4>
-A flow of water can drive a water turbine that can generate energy. The most common form of hydropower is a dam,
-but the flow of a river and tidal power can be energy sources as well.
-</td>
-<td class="sourceCol" id="Wind power">
-<h4><b>Wind power</b></h4>
-Wind can be used to run windturbines. Especially places at high altitudes or on the open water are suitable for
-this kind of energy production.
-</td>
-<td class="sourceCol" id="Biomass">
-<h4><b>Biomass</b></h4>
-Biomass consists of organic matter like plant remnants that can be converted into biofuel and produce energy.
-</td>
-<td class="sourceCol" id="Solar power">
-<h4><b>Solar power</b></h4>
-Sunlight can be converted into electricity. Solar panels are the most common way to achieve this.
-</td>
-<td class="sourceCol" id="Geothermal">
-<h4><b>Geothermal</b></h4>
-Water exposed to the earths internal heat is heated to such an extent that it can be used to run turbines that can generate energy.
-</td>
-</tr>
-</table>
-
-<div id="stackedBarContainer">
-</div>
-
-The bars represent the contribution of the different renewable energy sources to the total renewable energy production.
-<img src="doc/arrow-up.png" alt="Hover a bar" height="30" width="30"> <b>Hover</b> to reveal the corresponding energy source.
-
-<table>
-	<tr>
-		<td class="sourceCol">
-			<h4><b>Renewable energy production</b></h4>
-			<b>In the world</b>
-		</td>
-		<td class="sourceCol">
-			<h4><b>TOP-10 countries</b></h4>
-			<form>
-				<label><input type="radio" name="mode" value="producers"> Producing</label>
-				<label><input type="radio" name="mode" value="risers" checked> Increasing</label>
-				
-			</form>
-		</td>
-		<td class="sourceCol">
-		<h4><b>Honourable mentions</b></h4>
-
-		</td>
-
-	</tr>
-	<tr>
-		<td>
-		<div id="lineContainer">
-		</div>
-		</td>
-		<td>
-			<div id="barchartContainer">
-			
-
-			</div>
-		</td>
-		<td>
-				<p>
-		<b>Paraguay</b><br>
-		One of the worlds largest dams, Itaipu dam, is located in Paraguay. It provides 90% of Paraguay's
-		electricity, but also 20% of Brazil's.
-		</p>
+	<div id="mainInfo">
 		<p>
-		<b>Iceland</b><br>
-		Iceland is built on a volcano, so it's perfect to benefit from the earths warmth
-		and produce geothermal energy.
-		Iceland also has a lot of hydroelectric plants.
+		Renewable energy is energy that can be unlimitedly collected from natural sources. Using renewable energy does not affect the environment
+		and human health. It is becoming more and more clear that traditional energy sources like fossil fuel are depletable and also bad for the invironment.
+		This <a href="infopage.html">data visualization</a> is meant to give an insight to how many and what types of renewable energy are produced in different parts of the world.
 		</p>
-		</td>
-	</tr>
-	<tr>
-		<td class="sourceCol">
-		The line graph above shows how much renewable energy was produced every year since 2000
-		relative to the total energy production in the world.
-		</td>
-		<td class="sourceCol">
-		The barchart shows the 10 top renewable energy producing countries 
-		or the 10 countries that saw the biggest increase in renewable energy production
-		since the year 2000.
-		</td>
-	</tr>
-</table>
+
+		<p>
+		The following renewable energy sourcecs will be considered in this visualization:
+		</p>
+
+		<table id="sourcesTable">
+			<tr>
+				<td class="sourceCol" id="Hydropower">
+					<h4 class="Hydropower"><b>Hydropower</b></h4>
+					A flow of water can drive a water turbine that can generate energy. The most common form of hydropower is a dam,
+					but the flow of a river and tidal power can be energy sources as well.
+				</td>
+				<td class="sourceCol" id="Wind power">
+					<h4 class="Windpower"><b>Wind power</b></h4>
+					Wind can be used to run windturbines. Especially places at high altitudes or on the open water are suitable for
+					this kind of energy production.
+				</td>
+				<td class="sourceCol" id="Biomass">
+					<h4 class="Hydropower"><b>Biomass</b></h4>
+					Biomass consists of organic matter like plant remnants that can be converted into biofuel and produce energy.
+				</td>
+				<td class="sourceCol" id="Solar power">
+					<h4><b>Solar power</b></h4>
+					Sunlight can be converted into electricity. Solar panels are the most common way to achieve this.
+				</td>
+				<td class="sourceCol" id="Geothermal">
+					<h4><b>Geothermal</b></h4>
+					Water exposed to the earths internal heat is heated to such an extent that it can be used to run turbines that can generate energy.
+				</td>
+			</tr>
+		</table>
+
+		<div id="stackedBarContainer"></div>
+		The bars represent the contribution of the different renewable energy sources to the total renewable energy production.
+		<img src="doc/arrow-up.png" alt="Hover a bar" height="30" width="30"> <b>Hover</b> to reveal the corresponding energy source.
+
+		<table>
+			<tr>
+				<td class="sourceCol">
+					<h4><b>Renewable energy production</b></h4>
+					<b>In the world</b>
+				</td>
+				<td class="sourceCol">
+					<h4><b>TOP-10 countries</b></h4>
+					<form>
+						<label><input type="radio" name="mode" value="producers"> Producing</label>
+						<label><input type="radio" name="mode" value="risers" checked> Increasing</label>
+						
+					</form>
+				</td>
+				<td class="sourceCol">
+					<h4><b>Honourable mentions</b></h4>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<div id="lineContainer"></div>
+				</td>
+				<td>
+					<div id="barchartContainer"></div>
+				</td>
+				<td>
+					<p>
+						<b>Paraguay</b><br>
+						One of the worlds largest dams, Itaipu dam, is located in Paraguay. It provides 90% of Paraguay's
+						electricity, but also 20% of Brazil's.
+					</p>
+					<p>
+						<b>Iceland</b><br>
+						Iceland is built on a volcano, so it's perfect to benefit from the earths warmth
+						and produce geothermal energy.
+						Iceland also has a lot of hydroelectric plants.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="sourceCol">
+					The line graph above shows how much renewable energy was produced every year since 2000
+					relative to the total energy production in the world.
+				</td>
+				<td class="sourceCol">
+					The barchart shows the 10 top renewable energy producing countries 
+					or the 10 countries that saw the biggest increase in renewable energy production
+					since the year 2000.
+				</td>
+			</tr>
+		</table>
 
 
-<script>
-//draw line graph
-setTimeout(function(){lineCallback("WLD");}, 500);
-</script>
+		<script>
+			//draw line graph
+			setTimeout(function(){lineCallback("WLD");}, 500);
+		</script>
+	</div>
+
+
+	<div class="bottomtext">Berend Nannes. 10382976. Programmeerproject 2017.</div>
+
 </div>
 
-
-<div class="bottom">
-Berend Nannes. 10382976. Programmeerproject 2017.
-</div>
-
-</div>
-
-<div id="comment">
-  <p class="infoText">
-  </p>
-</div>
+<div id="bottomtext"></div>
 
 </body>
-<script src="JavaScript/loaddata.js"></script>
-<script src="JavaScript/pie.js"></script>
-<script src="JavaScript/line.js"></script>
-<script src="JavaScript/stackedbar.js"></script>
-<script src="JavaScript/barchart.js"></script>

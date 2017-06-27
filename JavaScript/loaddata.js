@@ -1,9 +1,10 @@
 /*
-info.js
+loaddata.js
 Programmeerproject
 Berend Nannes
 */		
 
+/** Loads json data / Defines callbacks **/
 
 // que json files
 d3.queue(3)

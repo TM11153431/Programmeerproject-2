@@ -1,6 +1,14 @@
+/*
+barchart.js
+Programmeerproject
+Berend Nannes
+*/	
+
 function filterData(data) {
+	
 	/** Create top-10 renewable energy producing countries and the top-10 increasing countries **/
 	
+	// define arrays
 	var topValues = []
 	var topIncreases = []
 	
@@ -9,8 +17,10 @@ function filterData(data) {
 	
 	countries = Object.keys(data)	
 	
+	// check for each country if it belongs in the top10
 	for (s of countries) {
 		
+		// get percentage and increase
 		percentage = data[s][data[s].length-1].percentage;
 		if (data[s][0].percentage > 0) {increase = ((percentage - data[s][0].percentage) / data[s][0].percentage)*100;}
 		else {increase = 0};
@@ -62,7 +72,7 @@ function filterData(data) {
 }
 
 function drawBarchart(data) {
-	// creates barchart
+	/** creates barchart **/
 	
 	// remove old data
 	d3.select(".chart").remove();
@@ -124,34 +134,33 @@ function drawBarchart(data) {
 		.attr("y", function(d) { return y(d.value); })
 		.attr("height", function(d) { return height - y(d.value); })
 		.attr("width", x.rangeBand())
-		.on('mouseover', function(d) {
+		.on("mouseover", function(d) {
 			div.html("<b>"+ countryName(d.country)+ "</b><br>"+ Math.round(d.value) + "%" +"</div><br/>")
 			.style("display", "inline")
 			.style("left", (d3.event.pageX) + "px")
 			.style("top", (d3.event.pageY) + "px");
 			})
-		.on('mouseout', function(d) {div.style("display", "none")});
+		.on("mouseout", function(d) {div.style("display", "none")});
 		
 
 }
 
 function countryName(id) {
-	// get the name of a country given the ISO-3 code
+	/** get the name of a country given the ISO-3 code **/
 	var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 	for (var i = 0, j = countries.length; i < j; i++) {
 	if (id == countries[i].id) {return countries[i].properties.name};
 	}
 }
 
-
 function replace(array, index, newObject) {
-	// replaces and array element
+	/** replaces and array element **/
 	array.splice(index, 1);
 	array.push(newObject);
 }
 
 function compare(a,b) {
-	// compare function for sorting (descending)
+	/** compare function for sorting (descending) **/
   if (a.value > b.value)
     return -1;
   if (a.value < b.value)

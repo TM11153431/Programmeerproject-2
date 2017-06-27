@@ -1,5 +1,12 @@
-// draw pie chart
+/*
+pie.js
+Programmeerproject
+Berend Nannes
+*/
+
 function drawPie(data, country, index, code) {
+	
+	/** Creates a pie chart **/
 	
 	// remove old data
 	d3.select("#countryContainer").html("");
@@ -29,26 +36,26 @@ function drawPie(data, country, index, code) {
 		.style("opacity", 1)
 		.html("<div style='font-size: 18px'><b>Hover</b> <img src='doc/arrow-diagonal.png' alt='Click a country' height='30' width='30'><br> a slice to reveal exact percentage</div>");
 		
-	
-	// create pie chart
-	
+	// set sizes for pie chart
 	var width = 200,
 		height = 300,
 		radius = Math.min(width, height) / 2;
-
-	var color = d3.scale.category20();
-
-	var pie = d3.layout.pie()
-		.value(function(d) { return d.percentage; })
-		.sort(null);
-
+		
 	var arc = d3.svg.arc()
-		.innerRadius(radius - 100)
-		.outerRadius(radius - 10);
+	.innerRadius(radius - 100)
+	.outerRadius(radius - 10);
 		
 	var arcOver = d3.svg.arc()
         .outerRadius(radius);
 
+	var color = d3.scale.category20();
+
+	// initiate pie layout
+	var pie = d3.layout.pie()
+		.value(function(d) { return d.percentage; })
+		.sort(null);
+
+	// create svg canvas
 	var svg = d3.select("#pieContainer").append("svg")
 		.attr("id", "pie")
 		.attr("width", width)
@@ -56,14 +63,17 @@ function drawPie(data, country, index, code) {
 	  .append("g")
 		.attr("transform", "translate(" + width / 2 + "," + radius + ")");
 	
+	// link data
 	var g = svg.selectAll(".arc")
 		.data(pie(data))
 	  .enter().append("g")
 		.attr("class", "arc")
 		.on("mouseover", function(d) {
+			// grow slice
             d3.select(this).select("path").transition()
                .duration(200)
                .attr("d", arcOver);
+			  // activate tooltip
 			div.transition()		
 				.duration(200)		
 				.style("opacity",1);	
@@ -71,6 +81,7 @@ function drawPie(data, country, index, code) {
 				+ (d.data.percentage*100).toFixed(2)+ "% </b></u> of the total renewable energy production." + "</div><br/>");
         })
         .on("mouseout", function(d) {
+			// shrink slice
             d3.select(this).select("path").transition()
                .duration(100)
                .attr("d", arc);
@@ -94,8 +105,8 @@ function drawPie(data, country, index, code) {
 	.call(d3.legend);
 	
 	if (window.location.href.indexOf("infopage") > -1) {
-    // go to line graph
-	lineCallback(code)
+		/** go to line graph (if on infopage) **/
+		lineCallback(code)
 	}
 
 };

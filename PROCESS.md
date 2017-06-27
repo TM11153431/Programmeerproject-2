@@ -86,4 +86,5 @@ Vandaag was ik ziek. Ik heb thuis wel kunnen werken aan het opschonen van mijn c
 
 ### Week 4, dinsdag:
 Positie van de timeslider tooltip aangepast zodat deze relatief is (t.o.v. de slider zelf). Extra functionaliteit toegevoegd aan de slider.
-Bij het sliden is er nu een focuspunt in de lijngrafiek die mee beweegt als het jaar aangepast wordt.
+Bij het sliden is er nu een focuspunt in de lijngrafiek die mee beweegt als het jaar aangepast wordt. Stacked bar op de infopage aangepast
+zodat deze ook exacte percentages laat zien bij mouseover. Code verder opgeschoond en verduidelijkt. 

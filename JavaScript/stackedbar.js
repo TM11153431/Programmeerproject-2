@@ -1,4 +1,12 @@
+/*
+stackedbar.js
+Programmeerproject
+Berend Nannes
+*/	
+
 function drawBar(data) {
+	
+	/** Creates stacked bar on index.html **/
 	
 	// set size
 	var width = 1140;
@@ -21,6 +29,7 @@ function drawBar(data) {
 		.selectAll("rect")
 		.data(data).enter().append("rect")
 		.attr("x", function(d) {
+			// calculate x-position
 			total = 0;
 			i = data.indexOf(d); 
 			while (i > 0) {
@@ -34,19 +43,27 @@ function drawBar(data) {
 		.attr("width", function(d) {return x(d.percentage); })
 		.attr("fill", function(d) { return color(d.source); })
 		.on("mouseover", function trans(d) {
+			// highlight bar
             d3.select(this).transition().duration(300)
 				.attr("height", height)
 				.attr("y", 10);
+			// highlight source table cell
 			d3.select("[id='"+d.source+"']").transition().duration(300)
-				.attr("bgcolor", color(d.source));
+				.attr("bgcolor", color(d.source))
+			// show percentage
+			d3.select("[id='"+d.source+"']").select("h4")
+				.append("span").html(" <b>" + Math.round(d.percentage*100) + "%</b>")
+				.style("align", "right")
+				.transition().duration(300)
 		})
         .on("mouseout", function(d) {
+			// reset animations on mouseout
 			d3.select(this).transition().duration(300)
 				.attr("height", height-25)
 				.attr("y", 20);
 			d3.select("[id='"+d.source+"']").transition().duration(300)
 				.attr("bgcolor", "white");
-        });
-		
-	
+			d3.select("[id='"+d.source+"']").select("h4").html("<b>" + d.source + "</b>")
+				.transition().duration(300)
+        });	
 }
