@@ -1,7 +1,7 @@
 /*
-linkedviews.css
+style.css
 Berend Nannes
-Data Processing
+Programmeerproject
 */
 
 body {
@@ -176,9 +176,15 @@ p {
   fill: black;
 }
 
+#yearCircle {
+  fill: green;
+  stroke: white;
+  stroke-width: 2;
+}
+
 #mainVis {
-width: 1000px;
-height: 350px;
+  width: 1000px;
+  height: 350px;
 }
 
 .chart rect {

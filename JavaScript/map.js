@@ -1,13 +1,13 @@
 
 // create data map
-function map(countryData) {
+function map(data, year) {
 	
 	// remove old
 	d3.select("#map").remove();
 	d3.select("#barContainer").html("");
 		
-	// retrieve json data
-	dataset = countryData;
+	// link json data to map
+	dataset = data[0][year][0];
 	
 	// get min and max values
 	var indexValues = Object.keys(dataset).map(function (key) { return dataset[key].percentage; } );
@@ -37,7 +37,7 @@ function map(countryData) {
 				datamap.svg.attr("id","map");
 				datamap.svg.selectAll('.datamaps-subunit').on('click', function(geo) {
 					var code = geo.id;
-					clickCallback(code, geo.properties.name, dataset[code].percentage);
+					clickCallback(code, geo.properties.name, data[0]["2014"][0][code].percentage);
 					});
 			},	
 		geographyConfig: {

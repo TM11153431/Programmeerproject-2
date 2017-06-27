@@ -4,6 +4,7 @@ function drawLine(data,code) {
 	// remove old graph
 	d3.select("#lineGraph").remove();
 	
+	
 	// Set the dimensions of the canvas / graph
 	var	margin = {top: 10, right: 30, bottom: 30, left: 30},
 		width = 400 - margin.left - margin.right,
@@ -74,6 +75,7 @@ function drawLine(data,code) {
 		.attr('id', 'focusCircle')
 		.attr('r', 2)
 		.attr('class', 'circle focusCircle');
+	
 	focus.append("text")
 		.attr("id","focusText")
 		.attr("transform", "translate(5,-5)");
@@ -117,8 +119,22 @@ function drawLine(data,code) {
 				.text(data[d].percentage + "%");
 		});
 	
+	// show year dot if on infopage
+	if (window.location.href.indexOf("infopage") > -1) {
+		currentYear = document.getElementById("yearContainer").innerHTML;
+		yearDot(currentYear);
+	}
+	
+	
 	function yearDot(year) {
-		var yVal = bisectDate(year);
+		var yearIndex = bisectDate(data, year);
+		var xVal = x(data[yearIndex].year);
+		var yVal = y(data[yearIndex].percentage);
+		svg.append('circle')
+			.attr('id', 'yearCircle')
+			.attr('r', 6)
+			.attr('cx', xVal)
+			.attr('cy', yVal);
 		console.log(year, yVal);
 	}
 		

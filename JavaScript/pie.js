@@ -13,6 +13,8 @@ function drawPie(data, country, index, code) {
 		.style("font-size","25px")
 		.style("font-weight","bold")
 		.html(country+"<br/>")
+		.attr("id","countryCode")
+		.attr("value",code)
 	   .append("span")
 		.style("font-size","20px")
 		.style("font-weight","normal")
