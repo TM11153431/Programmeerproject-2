@@ -20,7 +20,7 @@ d3.queue(3)
 					d3.select("#yearContainer")
 					.html(year)
 					//calculate position of year text
-					.style("top", (595 + (2014-year)*(175/15)) + "px");
+					.style("bottom", (278 - (2014-year)*(175/15)) + "px");
 					// draw map for that year
 					map(countryData[0][year][0]);
 					//yearDot(year);
