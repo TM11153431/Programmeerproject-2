@@ -28,7 +28,7 @@ d3.queue(3)
 				}
 			}
 		})
-	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/newmapdata.json")
+	}, "https://raw.githubusercontent.com/BerendNannes/Programmeerproject/master/Data/mapdata.json")
 	.defer(function(url, callback) {
 		d3.json(url, function(error, data) {
 			if (error) throw error;
