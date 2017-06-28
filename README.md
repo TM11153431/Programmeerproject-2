@@ -9,7 +9,7 @@ De visualisatie bestaat dus uit twee pagina's:
 
 ### Mainpage (index.html)
 
-![](doc/proposal_1.jpg =250)
+<img src="doc/proposal_1.jpg" alt="mainpage" style="width: 250px;"/>
 
 1. ***Navigatie*** om te schakelen tussen de twee pagina's
 
@@ -27,7 +27,7 @@ die sinds het jaar 2000 het meest zijn gestegen in groene energieproductie.
 
 ### Data visualisaties (infopage.html)
 
-![](doc/proposal_2.jpg =250)
+<img src="doc/proposal_2.jpg" alt="infopage" style="width: 250px;"/>
 
 1. ***Navigatie*** om te schakelen tussen de twee pagina's
 
