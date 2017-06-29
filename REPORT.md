@@ -66,5 +66,9 @@ geïmplementeerd had was het effect op de datamap minimaal: de verschillen tusse
 slider ook te koppelen aan de lijngrafiek door middel van een focus cirkel die meebeweegt met het gekozen jaar. Zo is er toch etra interactiviteit en is het 
 effect van de slider beter zichtbaar. Ik ben blij met de keuze om toch een timeslider toe te voegen, omdat je tijdens het programmeren ook weer op nieuwe ideeën komt.
 
-
+Als ik meer tijd zou hebben zou ik toch een aantal dingen anders willen doen. In mijn implementatie wordt elke keer als een slider of button wordt versleept of
+aangeklikt een functie uitgevoerd die een bepaalde visualisatie opnieuw tekent. De volledige visualisatie wordt verwijderd en opnieuw aangemaakt. Het lijkt me
+mooier om de container te behouden en alleen de data aan te passen. Dit zou sneller gaan en bovendien zou je dit vloeiend kunnen laten verlopen met behulp
+van een transition. Ik heb besloten dit niet tijdens het project aan te passen, maar om vast te houden aan mijn huidige techniek. Voor volgende keer weet ik dat
+ik dat dus anders zou willen aanpakken.
 
