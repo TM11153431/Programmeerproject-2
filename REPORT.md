@@ -41,5 +41,15 @@ De pagina is voorzien van een timeslider (input type=range html element) waarmee
 geschoven tussen jaren wordt de functie _slideCallback()_ geactiveerd. Dan wordt opnieuw de functie _map()_ uitgevoerd met de data voor het geslecteerde jaar.
 Daarnaast wordt ook de functie _drawLine()_ weer aangeroepen zodat de focus cirkel zich aanpast aan het jaar dat geselecteerd is.
 
-De main page [index.html](https://berendnannes.github.io/Programmeerproject/index.html) 
+De main page [index.html](https://berendnannes.github.io/Programmeerproject/index.html) is bedoel om het onderwerp te introduceren en om een overzicht voor
+de hele wereld te laten zien. Om de bijdrage van verschillene vormen van energie aan de globale groene energieproductie weer te geven wordt in **stackedbar.js**
+met de functie _drawBar()_ een horizontale stacked bar getekend waarin de afzonderlijke bars de bijdrage van de verschillende energiebronnen weergeven. Bij mouseover
+wordt de bar gehightlight en licht de bijbehorende cel met uitleg over die energiebron in de bovenstaande tabel op. Verder wordt dan het exacte percentage weergegeven.
+
+Daar onder staan nog twee visualisaties: Ten eerste weer een lijngrafiek; dit keer met de data voor de hele wereld, zodat je kan zien of de groene energieproductie
+in de wereld is toegenomen of juist afgenomen. Daarnaast staat een barchart waarin een top 10 is gevisualiseerd. Daarin zijn twee verschillende keuze's die je kan
+maken met behulp van een radio button: de top-10 landen die het meest groene energie produceren, of de top-10 landen die het meest zijn gestegen in
+de productie van groene energie. In de functie _filterData()_ in **barchart.js** worden eerst beide top-10's aangemaakt door te loopen over alle landen en telkens
+de beste 10 te behouden. Verder wordt daarin bijgehouden of de keuze wordt aangepast met de radio buttons. Vervolgens wordt in de functie _drawBarchart()_ de barchart
+getekend. De barchart is uitgerust met een tooltip die bij mouseover de naam van het land en het percentage laat zien.
 
