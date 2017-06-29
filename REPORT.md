@@ -53,3 +53,18 @@ de productie van groene energie. In de functie _filterData()_ in **barchart.js**
 de beste 10 te behouden. Verder wordt daarin bijgehouden of de keuze wordt aangepast met de radio buttons. Vervolgens wordt in de functie _drawBarchart()_ de barchart
 getekend. De barchart is uitgerust met een tooltip die bij mouseover de naam van het land en het percentage laat zien.
 
+### Challenges
+
+In eerste instatie was het mijn bedoeling om al mijn visualisaties op één pagina te combineren. Gezien het feit dat het belangrijk is om een storytelling
+aspect erbij te hebben heb ik later besloten dat ik twee verschillende pagina's moest hebben. Uiteindelijk ben ik blij met dit besluit omdat er nu een 
+duidelijke tweedeling is: op de mainpage storytelling en overzicht, en op de andere pagina datavisualisaties van alle landen. Er is een oplossing denkbaar waarbij
+je één grote pagina maakt waarin je kan scrollen, maar deze manier lijkt mij een stuk overzichtelijker.
+
+Het was niet vanaf het begin af aan mijn plan om een timeslider te maken, omdat ik data uit voorgaande jaren ook al heb gevisualiseerd in line graphs. Uiteindelijk
+heb ik toch de keuze gemaakt om dit wel te doen; ik had de data immers tot mijn beschikking, dus het leek zonde om dit niet te doen. Toen ik de slider eenmaal
+geïmplementeerd had was het effect op de datamap minimaal: de verschillen tussen de jaren waren klein t.o.v. de totale kleurenschaal. Toen heb ik besloten om de
+slider ook te koppelen aan de lijngrafiek door middel van een focus cirkel die meebeweegt met het gekozen jaar. Zo is er toch etra interactiviteit en is het 
+effect van de slider beter zichtbaar. Ik ben blij met de keuze om toch een timeslider toe te voegen, omdat je tijdens het programmeren ook weer op nieuwe ideeën komt.
+
+
+
