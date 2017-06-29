@@ -36,7 +36,7 @@ d3.queue(3)
 			if (window.location.href.indexOf("index") > -1){
 				drawBar(data[0]["WLD"])
 			}
-			// send to pie chart
+			// callback for pie chart
 			clickCallback = function(code, country, index) {
 				drawPie(data[0][code], country, index, code);
 			}

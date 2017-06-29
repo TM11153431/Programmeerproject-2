@@ -7,12 +7,22 @@ groene energie voornamelijk een bijdrage leveren aan de totale groene energiepro
 
 #### Technical design
 
+De code bestaat uit de volgende scripts:
+* **loaddata.js**. Om de data in te laden
+* **map.js**. Voor de wereldkaart chloropleet
+* **pie.js**. Voor de pie chart
+* **line.js**. Voor de line graph
+* **stackedbar.js**. Voor de stacked barchart
+* **barchart.js**. Voor de top-10 barchart
+
 De data bestaat uit een ten eerste een json-file met daarin voor elk jaar voor elk land het percentage groene energie t.o.v. de totale energieproductie. Deze data staat in twee verschillende structuren: per land en per jaar, bedoeld voor
-respectievelijk de datamap en de lijngrafiek. Verder is er data per land voor de bijdrage van de verschillende energiebronnen aan de totale energieproductie. De data wordt ingeladen in *loaddata.js* d.m.v. een queue. Elk onderdeel van de queue bevat een verschillende
+respectievelijk de datamap en de lijngrafiek. Verder is er data per land voor de bijdrage van de verschillende energiebronnen aan de totale energieproductie. De data wordt ingeladen in **loaddata.js** d.m.v. een queue. Elk onderdeel van de queue bevat een verschillende
 dataset met zijn eigen callback functie, zodat elke dataset op ieder moment aangeroepen kan worden.
 
-Op de pagina [infopage.html](https://berendnannes.github.io/Programmeerproject/infopage.html) wordt de functie _map()_ uitgevoerd.
-Daarin wordt de wereldkaart gevisualiseerd (sourcecode: [infopage.html](http://datamaps.github.io/)). De kleur in de chloropleet is een gradient
+Op de pagina [infopage.html](https://berendnannes.github.io/Programmeerproject/infopage.html) wordt de functie _map()_ in **map.js** uitgevoerd.
+Daarin wordt de wereldkaart gevisualiseerd (sourcecode: [datamaps.github.io](http://datamaps.github.io/)). De kleur in de chloropleet is een gradient
 waarin de kleur van het land gekoppeld is aan het percentage groene energie dat dat land produceerd. Die zelfde gradient wordt gebruikt om
 de legende onder de kaart te tekenen. Bij mouseover wordt het percentage van het land weergegeven in een tooltip. Een onclick functie zorgt
-ervoor dat als er op een land geklikt wordt, de functie _clickCallback()_ wordt geactiveerd.
+ervoor dat als er op een land geklikt wordt, de functie _clickCallback()_ wordt geactiveerd die is gedefiniëerd in de queue en toegang
+verleent aan de data voor de verschillende energiebronnen. In deze callback wordt vervolgens de functie _drawPie_ uitgevoerd in **pie.js**.
+
